@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+}
+/* -----------------------navbar-------------------- */
+
+.Navbar{
+/* background: linear-gradient(180deg, #6641AA 0%, rgba(102, 65, 170, 0) 100%); */
+background: transparent;
+/* padding: 1rem !important; */
+}
+
+.navbtn{
+  background-color: #6641AA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 2px 5px;
+  width: 100px;
+}
+.headlink{
+  margin: 0 15px;
+}
+
+/* ----------------------banner----------------------- */
+
+.banner{
+  background: linear-gradient(180deg, #e8ddfa 0%, rgba(141, 137, 150, 0) 100%);
+ height: 100vh;
+}
+.bannercontent{
+  margin-top: 1rem;
+  
+}
+.Heading-1{
+  font-size: 65px;
+}
+.para{
+  font-size: 20px;
+}
+
+/* -----------------------apply now------------------- */
+.cardtitle{
+  padding: 10px;
+  background-color: #5a518a;
+  width: 55%;
+}
+#internSearch{
+  padding: 10px;
+  border: 2px solid gainsboro;
+  width: 100%;
+}
+.filtertitle{
+  font-weight: bold;
+  margin: 10px 0;
+}
+.filtercard ul {
+padding: 15px;
+}
+.filtercard ul li{
+list-style: none;
+margin-top: 10px;
+}
+.filtercard input{
+  margin-right: 15px;
+}
+
+/* ----------------internship-------------- */
+
+.internBox{
+}
+.activehire{
+  background-color:"#6641AA" ;
+   padding: 10px;
+}
+.cardtitle-i{
+  background-color: #6641AA;
+  padding: 15px;
+  width: 55%;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  /* margin-left: 10px; */
+}
+.l{
+  border: 2px solid rgb(187, 187, 187);
+  padding: 10px;
+  border-radius: 50px;
+  color: rgb(187, 187, 187);
+  /* margin-left: 10px; */
+}
+.l1{
+  background-color:  rgb(187, 187, 187);
+  padding: 10px;
+  border-radius: 50px;
+  color: white;
+  margin-left: 10px;
+}
+.cardFoot{
+  color: orange;
+}
+.cardFoot a{
+  color: orange;
+  font-size: 20px;
+  text-decoration: none;
+  
+}
+.footer-column li {
+ margin: 10px 0;
+}
+.footer-column li a{
+  text-decoration: none;
+  color: rgb(194, 194, 194);
+}
+.footer-column li a:hover{
+  color: orange;
+}
+.subfooter a{
+  color: white;
+  margin: 0 10px;
+}
