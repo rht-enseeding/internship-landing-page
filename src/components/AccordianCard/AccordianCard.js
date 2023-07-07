@@ -15,7 +15,7 @@ const AccordionCard = ({ data }) => {
         <Accordion.Header className="FaqHeader" style={{ fontSize: "33px" }}>
           {data?.ques}
         </Accordion.Header>
-        <Accordion.Body className="p-4">{data?.ans}</Accordion.Body>
+        <Accordion.Body className="p-4 text-start">{data?.ans}</Accordion.Body>
       </Accordion.Item>
     </Accordion>
   );

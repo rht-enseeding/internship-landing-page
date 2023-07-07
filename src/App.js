@@ -9,6 +9,11 @@ import InternshipOffer from './components/InternshipOffer';
 import Courses from './components/courses';
 import FAQ from './components/faq.js';
 import Footer from './components/Footer';
+import InternshipCourses from './components/InternshipCourse';
+import Company from './components/Company';
+import Apply from './components/apply';
+import ContactUS from './components/contact';
+import Subscribe from './components/subscribe';
 
 function App() {
   return (
@@ -18,8 +23,14 @@ function App() {
       <Applynow />
       <InternshipOffer />
       <Courses />
+      <InternshipCourses />
+      <Company />
       <FAQ />
-      <Footer/>
+
+      <Apply />
+      <ContactUS/>
+ {/* <Subscribe/> */}
+      <Footer />
     </div>
   );
 }

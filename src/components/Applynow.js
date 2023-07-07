@@ -24,12 +24,19 @@ color:"white",
     margin: "5px",
     color: "teal",
   };
+    const handleColumnClick = (link) => {
+      window.location.href = link; // Redirect to the provided link
+    };
 
   const para = {};
   return (
-    <div className="container-fluid row d-flex justify-content-between  py-3 py-md-5 px-5 my-sm-5">
-      <div className="col-12  d-flex justify-content-center col-md-6 col-lg-4 my-1 py-2 py-md-1 text-start">
-        <Card style={carde}>
+    <div className="container-fluid row d-flex justify-content-center  py-3 py-md-5 px-5 my-sm-5 ">
+      <div className="col-12   col-md-6 col-lg-4  py-2 py-md-1 text-start">
+        <Card
+          style={carde}
+          onClick={() => handleColumnClick("https://app.interncove.com/")}
+          className="effect"
+        >
           <Card.Body>
             <Card.Title className="cardtitle">Internship Training</Card.Title>
 
@@ -54,7 +61,11 @@ color:"white",
         </Card>
       </div>
       <div className="col-12  d-flex justify-content-center col-md-6 col-lg-4 my-1 py-2 py-md-1 text-start">
-        <Card style={carde}>
+        <Card
+          style={carde}
+          onClick={() => handleColumnClick("https://app.interncove.com/")}
+          className="effect"
+        >
           <Card.Body>
             <Card.Title className="cardtitle">Internship Training</Card.Title>
 
@@ -79,7 +90,11 @@ color:"white",
         </Card>
       </div>
       <div className="col-12  d-flex justify-content-center col-md-6 col-lg-4 my-1 py-2 py-md-1 text-start">
-        <Card style={carde}>
+        <Card
+          style={carde}
+          onClick={() => handleColumnClick("https://app.interncove.com/")}
+          className="effect"
+        >
           <Card.Body>
             <Card.Title className="cardtitle">Internship Training</Card.Title>
 

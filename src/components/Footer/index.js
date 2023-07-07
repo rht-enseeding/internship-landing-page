@@ -11,54 +11,46 @@ const Footer = () => {
     >
       <Container className="py-5">
         <Row>
-          <Col md={3} className="footer-column text-center text-sm-start">
+          <Col md={4} className="footer-column text-center text-sm-start">
             <h4>Company</h4>
             <ul className="list-unstyled">
               <li>
-                <a href="/">Company Registration</a>
+                <a href="/">Teacher</a>
               </li>
               <li>
-                <a href="/">Digital Marketing</a>
+                <a href="/"> Student</a>
               </li>
               <li>
-                <a href="/">Fundraising Service</a>
+                <a href="/">Instructor</a>
               </li>
               <li>
-                <a href="/">Legal & Accounting</a>
+                <a href="/">Company</a>
               </li>
-              <li>
-                <a href="/">Application Development</a>
-              </li>
-              <li>
-                <a href="/">Sales</a>
-              </li>
-              <li>
-                <a href="/">Business Plan Writing</a>
-              </li>
+            
             </ul>
           </Col>
 
-          <Col md={3} className="footer-column text-center text-sm-start">
+          <Col md={4} className="footer-column text-center text-sm-start">
             <h4>Resources</h4>
             <ul className="list-unstyled">
               <li>
-                <a href="/">Internship Platform</a>
+                <a href="/">Privacy  Policy</a>
               </li>
               <li>
-                <a href="/">Fractional Team Rental</a>
+                <a href="/">Terms and Coditions</a>
               </li>
               <li>
-                <a href="/">Startup Acquisition</a>
+                <a href="/">Blog</a>
               </li>
               <li>
-                <a href="/">Co Founder</a>
+                <a href="/">Contact Us</a>
               </li>
             </ul>
           </Col>
-          <Col md={3} className="footer-column text-center text-sm-start">
+          <Col md={4} className="footer-column text-center text-sm-start">
             <img src={footer} alt="" />
           </Col>
-          <Col md={3} className="footer-column">
+          {/* <Col md={3} className="footer-column">
             <p>Subscribe to our newsletter for updates</p>
             <Form>
               <Form.Group
@@ -82,7 +74,7 @@ const Footer = () => {
                 </Button>
               </Form.Group>
             </Form>
-          </Col>
+          </Col> */}
         </Row>
         <hr />
         <Row>

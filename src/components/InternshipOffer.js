@@ -1,16 +1,53 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "../App.css";
+import { FaMoneyBill, FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
 
-const InternshipOffer = () => {
+
+const cardsData = [
+  {
+    id: 1,
+    heading: "Web developement",
+    subheading: "dbyhcdfiuvhjdiuvhfk",
+    time: "3 months",
+    cost: "$45.00/month",
+  },
+  {
+    id: 2,
+    heading: "Machine Learning ",
+    subheading: "dbyhcdfiuvhjdiuvhfk",
+    time: "3 months",
+    cost: "$25.00/month",
+  },
+  {
+    id: 3,
+    heading: " Internet of Things",
+    subheading: "dbyhcdfiuvhjdiuvhfk",
+    time: "2.5 months",
+    cost: "$20.00/month",
+  },
+  {
+    id: 4,
+    heading: "Data Analytics",
+    subheading: "dbyhcdfiuvhjdiuvhfk",
+    time: "2 months",
+    cost: "$15.00/month",
+  },
+];
+
+ const handleColumnClick = (link) => {
+   window.location.href = link; // Redirect to the provided link
+ };
+const 
+InternshipOffer = () => {
   return (
-    <Container className="internBox ">
+    <Container fluid  className=" my-5 py-2">
       <p>Internships</p>
-      <h1 className=" mb-5">Latest Internship Offers</h1>
+      <h1 className=" mb-3">Latest Internship Offers</h1>
 
-      <Row className="my-5 p-5 text-start">
+      <Row className="my-2 p-5 text-start">
         <Col xs={12} md={4} className="">
-          <Card className="p-2 filtercard">
+          <Card className=" filtercard">
             <div>
               <ul>
                 <li>
@@ -77,8 +114,8 @@ const InternshipOffer = () => {
             </div>
             {/* ------------------ */}
             <div>
-              <ul>
-                <li className="filtertitle">Specialities</li>
+              <ul className="pb-4">
+                <li className="filtertitle ">Specialities</li>
                 <li
                   style={{
                     display: "flex",
@@ -141,178 +178,63 @@ const InternshipOffer = () => {
         </Col>
         <Col xs={12} md={8}>
           <Row>
-            {/* -------Card---------MAP-------------------- */}
-            <Col xs={12} md={6}>
-              <Card className="py-2">
-                <Card.Body className="m-1">
-                  <Card.Title
-                    className="cardtitle-i px-2"
-                    style={{ color: "white", fontSize: "17px" }}
-                  >
-                    Actively Hired
-                  </Card.Title>
+            {cardsData.map((card) => (
+              <Col xs={12} md={6} key={card.id} className="mb-2">
+                <Card
+                  className="effect"
+                  onClick={() =>
+                    handleColumnClick("https://app.interncove.com/")
+                  }
+                >
+                  <Card.Body className="py-2">
+                    <Card.Title
+                      className="cardtitle-i px-1"
+                      style={{ color: "white", fontSize: "15px" }}
+                    >
+                      Actively Hired
+                    </Card.Title>
 
-                  <Card.Text className="p-2 m-0">
-                    <h2>Web Developement</h2>
-                    <p>Syntax Doc Solutions Private Limited</p>
-                  </Card.Text>
-                  <div className="d-flex justify-content-between">
-                    <Card.Text className="p-2">
-                      <ul>
-                        <li>rr</li>
-                        <li>t</li>
-                        <li>ff</li>
-                      </ul>
-                    </Card.Text>{" "}
-                    {/* <img src={apply1} alt="" /> */}
+                    <Card.Text className="pt-2">
+                      <h4>{card.heading}</h4>
+                      {/* <p>{card.subheading}</p> */}
+                    </Card.Text>
+                    <div className="d-flex justify-content-between">
+                      <Card.Text className="py-2">
+                        <ul style={{ listStyle: "none", paddingLeft: "0" }}>
+                          <li className="py-1">
+                            {" "}
+                            <FaMoneyBill /> &nbsp;&nbsp; {card.cost}
+                          </li>
+                          <li className="py-1">
+                            <FaMapMarkerAlt />
+                            &nbsp;&nbsp; Mumbai
+                          </li>
+                          <li className="py-1">
+                            <FaCalendarAlt />
+                            &nbsp;&nbsp; {card.time}
+                          </li>
+                        </ul>
+                      </Card.Text>{" "}
+                      {/* <img src={apply1} alt="" /> */}
+                    </div>
+                    <div
+                      className="d-flex m-0 p-0 justify-content-around"
+                      style={{ width: "100%" }}
+                    >
+                      <span className="l1">Freelancer</span>
+                      <span className="l">Freelancer</span>
+                      <span className="l">Freelancer</span>
+                    </div>
+                  </Card.Body>
+                  <div className="cardFoot mx-3">
+                    <h3>
+                      <a href="">See details</a>
+                    </h3>
                   </div>
-                  <div
-                    className="d-flex m-0 p-0 justify-content-around"
-                    style={{ width: "100%" }}
-                  >
-                    <span className="l1">Freelancer</span>
-                    <span className="l">Freelancer</span>
-                    <span className="l">Freelancer</span>
-                  </div>
-                </Card.Body>
-                <div className="cardFoot mx-3">
-                  <h3>
-                    <a href="">See details</a>
-                  </h3>
-                </div>
-              </Card>
-            </Col>
+                </Card>
+              </Col>
+            ))}
             {/* --------------------------------------- */}
-           
-            {/* -------Card---------MAP-------------------- */}
-            <Col xs={12} md={6}>
-              <Card className="py-2">
-                <Card.Body className="m-1">
-                  <Card.Title
-                    className="cardtitle-i px-2"
-                    style={{ color: "white", fontSize: "17px" }}
-                  >
-                    Actively Hired
-                  </Card.Title>
-
-                  <Card.Text className="p-2 m-0">
-                    <h2>Web Developement</h2>
-                    <p>Syntax Doc Solutions Private Limited</p>
-                  </Card.Text>
-                  <div className="d-flex justify-content-between">
-                    <Card.Text className="p-2">
-                      <ul>
-                        <li>rr</li>
-                        <li>t</li>
-                        <li>ff</li>
-                      </ul>
-                    </Card.Text>{" "}
-                    {/* <img src={apply1} alt="" /> */}
-                  </div>
-                  <div
-                    className="d-flex m-0 p-0 justify-content-around"
-                    style={{ width: "100%" }}
-                  >
-                    <span className="l1">Freelancer</span>
-                    <span className="l">Freelancer</span>
-                    <span className="l">Freelancer</span>
-                  </div>
-                </Card.Body>
-                <div className="cardFoot mx-3">
-                  <h3>
-                    <a href="">See details</a>
-                  </h3>
-                </div>
-              </Card>
-            </Col>
-            {/* --------------------------------------- */}
-           
-            {/* -------Card---------MAP-------------------- */}
-            <Col xs={12} md={6}>
-              <Card className="py-2">
-                <Card.Body className="m-1">
-                  <Card.Title
-                    className="cardtitle-i px-2"
-                    style={{ color: "white", fontSize: "17px" }}
-                  >
-                    Actively Hired
-                  </Card.Title>
-
-                  <Card.Text className="p-2 m-0">
-                    <h2>Web Developement</h2>
-                    <p>Syntax Doc Solutions Private Limited</p>
-                  </Card.Text>
-                  <div className="d-flex justify-content-between">
-                    <Card.Text className="p-2">
-                      <ul>
-                        <li>rr</li>
-                        <li>t</li>
-                        <li>ff</li>
-                      </ul>
-                    </Card.Text>{" "}
-                    {/* <img src={apply1} alt="" /> */}
-                  </div>
-                  <div
-                    className="d-flex m-0 p-0 justify-content-around"
-                    style={{ width: "100%" }}
-                  >
-                    <span className="l1">Freelancer</span>
-                    <span className="l">Freelancer</span>
-                    <span className="l">Freelancer</span>
-                  </div>
-                </Card.Body>
-                <div className="cardFoot mx-3">
-                  <h3>
-                    <a href="">See details</a>
-                  </h3>
-                </div>
-              </Card>
-            </Col>
-            {/* --------------------------------------- */}
-           
-            {/* -------Card---------MAP-------------------- */}
-            <Col xs={12} md={6}>
-              <Card className="py-2">
-                <Card.Body className="m-1">
-                  <Card.Title
-                    className="cardtitle-i px-2"
-                    style={{ color: "white", fontSize: "17px" }}
-                  >
-                    Actively Hired
-                  </Card.Title>
-
-                  <Card.Text className="p-2 m-0">
-                    <h2>Web Developement</h2>
-                    <p>Syntax Doc Solutions Private Limited</p>
-                  </Card.Text>
-                  <div className="d-flex justify-content-between">
-                    <Card.Text className="p-2">
-                      <ul>
-                        <li>rr</li>
-                        <li>t</li>
-                        <li>ff</li>
-                      </ul>
-                    </Card.Text>{" "}
-                    {/* <img src={apply1} alt="" /> */}
-                  </div>
-                  <div
-                    className="d-flex m-0 p-0 justify-content-around"
-                    style={{ width: "100%" }}
-                  >
-                    <span className="l1">Freelancer</span>
-                    <span className="l">Freelancer</span>
-                    <span className="l">Freelancer</span>
-                  </div>
-                </Card.Body>
-                <div className="cardFoot mx-3">
-                  <h3>
-                    <a href="">See details</a>
-                  </h3>
-                </div>
-              </Card>
-            </Col>
-            {/* --------------------------------------- */}
-           
           </Row>
         </Col>
       </Row>
