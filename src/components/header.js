@@ -13,7 +13,7 @@ function Header() {
    };
   return (
     <>
-      {["sm"].map((expand) => (
+      {["md"].map((expand) => (
         <Navbar key={expand} expand={expand} className="Navbar">
           <Container fluid>
             <Navbar.Brand href="#">
@@ -24,6 +24,7 @@ function Header() {
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
+              style={{width:"60%"}}
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
@@ -51,20 +52,6 @@ function Header() {
                   >
                     Login
                   </Nav.Link>
-
-                  {/* <NavDropdown
-                    title="Dropdown"
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
-                  >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item>
-                  </NavDropdown> */}
                   <button
                     className="navbtn px-1 effect"
                     onClick={() =>

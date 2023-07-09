@@ -1,8 +1,13 @@
 .App {
   text-align: center;
+    padding-right: 0;
+
 }
 /* -----------------------navbar-------------------- */
 
+.model-open{
+  padding-right: 0;
+}
 .Navbar{
 /* background: linear-gradient(180deg, #6641AA 0%, rgba(102, 65, 170, 0) 100%); */
 background: transparent;
@@ -15,7 +20,7 @@ background: transparent;
   border: none;
   border-radius: 5px;
   padding: 2px 5px;
-  width: 100px;
+  /* width: 100px; */
 }
 .headlink{
   margin: 0 15px;
@@ -33,6 +38,15 @@ background: transparent;
 }
 .Heading-1{
   font-size: 65px;
+}
+@media (max-width: 767px) { /* Adjust the max-width value as needed */
+  .Heading-1 {
+    font-size: 34px; /* Adjust the font size as needed */
+  }
+
+  .Text-1 {
+    font-size: 16px; /* Adjust the font size as needed */
+  }
 }
 .para{
   font-size: 20px;

@@ -30,7 +30,7 @@ color:"white",
 
   const para = {};
   return (
-    <div className="container-fluid row d-flex justify-content-center  py-3 py-md-5 px-5 my-sm-5 ">
+    <div className="container-fluid row d-flex justify-content-center  py-3 py-md-5  my-sm-5 ">
       <div className="col-12   col-md-6 col-lg-4  py-2 py-md-1 text-start">
         <Card
           style={carde}

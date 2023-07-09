@@ -41,11 +41,11 @@ const cardsData = [
 const 
 InternshipOffer = () => {
   return (
-    <Container fluid  className=" my-5 py-2">
+    <Container   className=" my-5 py-2 ">
       <p>Internships</p>
       <h1 className=" mb-3">Latest Internship Offers</h1>
 
-      <Row className="my-2 p-5 text-start">
+      <Row className="my-2  text-start">
         <Col xs={12} md={4} className="">
           <Card className=" filtercard">
             <div>
