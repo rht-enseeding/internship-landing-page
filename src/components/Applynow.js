@@ -4,6 +4,12 @@ import { apply1, apply2, apply3 } from "../assets";
 // import { history, maldive1, mission, vssion } from "../../assets";
 
 const ApplyNow = () => {
+  const customStyle = {
+    width: "55%",
+    "@media (min-width: 992px)": {
+      width: "100%",
+    },
+  };
   const carde = {
     //  color: "#6641AA",
     //  fontWeight: "800",
@@ -30,7 +36,7 @@ color:"white",
 
   const para = {};
   return (
-    <div className="container-fluid row d-flex justify-content-center  py-3 py-md-5  my-sm-5 ">
+    <div className="container-fluid row d-flex justify-content-center  py-3 py-md-5  my-sm-5 mx-0 px-0">
       <div className="col-12   col-md-6 col-lg-4  py-2 py-md-1 text-start">
         <Card
           style={carde}
@@ -38,7 +44,9 @@ color:"white",
           className="effect"
         >
           <Card.Body>
-            <Card.Title className="cardtitle">Internship Training</Card.Title>
+            <Card.Title className="cardtitle " style={customStyle}>
+              Internship Training
+            </Card.Title>
 
             <Card.Text className="pt-4">
               <h3>100% Internship Guaranteed Courses Available</h3>
@@ -67,7 +75,9 @@ color:"white",
           className="effect"
         >
           <Card.Body>
-            <Card.Title className="cardtitle">Internship Training</Card.Title>
+            <Card.Title className="cardtitle" style={customStyle}>
+              Internship Training
+            </Card.Title>
 
             <Card.Text className="pt-4">
               <h3>Join us in Best-in-Class Certification Training</h3>
@@ -96,7 +106,9 @@ color:"white",
           className="effect"
         >
           <Card.Body>
-            <Card.Title className="cardtitle">Internship Training</Card.Title>
+            <Card.Title className="cardtitle" style={customStyle}>
+              Internship Training
+            </Card.Title>
 
             <Card.Text className="pt-4">
               <h3>Amazing Opportunities Available Now</h3>

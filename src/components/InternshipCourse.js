@@ -10,7 +10,7 @@ const cardsData = [
     id: 1,
     image: c1,
     heading: "Graphic Design",
-    desc: "Get ready to dive deep into the fundamentals of graphic design, where you'll explore the principles of composition, color theory, typography, and visual storytelling.",
+    desc: "Unlock your creativity and master the art of graphic design with our comprehensive course.",
     icons: ["icon1", "icon2", "icon3", "icon4"],
     rating: "4.5",
     lesson: "10 Lessons",
@@ -20,7 +20,7 @@ const cardsData = [
     id: 2,
     image: c2,
     heading: "Machine Learning",
-    desc: "Unlock limitless potential with our comprehensive Full Stack course, empowering you to master the art of web development from front to back",
+    desc: "Maximize your brand's online presence and dominate the digital landscape with our cutting-edge digital marketing course",
     icons: ["icon1", "icon2", "icon3", "icon4"],
     rating: "2.7",
     lesson: "10 Lessons",
@@ -30,7 +30,7 @@ const cardsData = [
     id: 3,
     image: c3,
     heading: "Full stack developemnet ",
-    desc: "Dive deep into graphic design fundamentals, exploring composition, color theory, typography, and visual storytelling in our immersive course",
+    desc: "Master the art of full-stack development and unlock limitless possibilities with our comprehensive course",
     icons: ["icon1", "icon2", "icon3", "icon4"],
     rating: "4.5",
     lesson: "13 Lessons",
@@ -40,8 +40,7 @@ const cardsData = [
     id: 4,
     image: c4,
     heading: "Data Analytics",
-    desc: "Dive deep into graphic design fundamentals, exploring composition, color theory, typography, and visual storytelling in our immersive course",
-
+    desc: "Unlock the power of data and master the art of analytics with our comprehensive data analytics course",
     icons: ["icon1", "icon2", "icon3", "icon4"],
     rating: "4.0",
     lesson: "16 Lessons",
@@ -62,7 +61,7 @@ const cardsData = [
     id: 6,
     image: c6,
     heading: "Digital Marketing",
-    desc: "Unlock the secrets of digital marketing success with our comprehensive course, designed to boost your business and maximize your online presence",
+    desc: "Master the art of digital marketing and skyrocket your online success with our comprehensive course.",
     icons: ["icon1", "icon2", "icon3", "icon4"],
     rating: "3.5",
     lesson: "9 Lessons",
@@ -78,16 +77,16 @@ const InternshipCourses = () => {
 
   return (
     <>
-      <Container className="internBox my-5 py-5">
+      <Container className="internBox my-5 py-5 text-center">
         <p style={{ color: "#6641AA", fontWeight: "bold", marginBottom: "0" }}>
           Reasonable Courses
         </p>
-        <h1> Guaranteed Internship Courses</h1>
+        <h1 className="mb-2"> Guaranteed Internship Courses</h1>
         <Row>
           {cardsData.map((card) => (
             <Col sm={4} key={card.id}>
               <Card
-                className="my-5 effect"
+                className="my-2 effect"
                 onClick={() => handleColumnClick("https://app.interncove.com/")}
               >
                 <Card.Img

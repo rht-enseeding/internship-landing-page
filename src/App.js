@@ -10,28 +10,37 @@ import Courses from './components/courses';
 import FAQ from './components/faq.js';
 import Footer from './components/Footer';
 import InternshipCourses from './components/InternshipCourse';
-import Company from './components/Company';
 import Apply from './components/apply';
 import ContactUS from './components/contact';
-import Subscribe from './components/subscribe';
+
+import Intern from './components/Interns';
+import Instructor from './components/Instructor';
+import CompanyPic from './components/CompanyPic';
+import Company from './components/Company';
 
 function App() {
   return (
-    <div className="App">
+    <>
+      {" "}
       {/* <Header /> */}
       <Banner />
       <Applynow />
+      <Intern />
+      <Instructor />
+      <Company/>
       <InternshipOffer />
       <Courses />
       <InternshipCourses />
-      <Company />
+      <CompanyPic />
       <FAQ />
-
       <Apply />
-      <ContactUS/>
- {/* <Subscribe/> */}
+      <ContactUS />
+      {/* <Subscribe/> */}
       <Footer />
-    </div>
+    </>
+    // <div className="App">
+
+    // </div>
   );
 }
 

@@ -1,8 +1,9 @@
-import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Row, Col, Card, Dropdown, DropdownButton, Form } from "react-bootstrap";
 import "../App.css";
 import { FaMoneyBill, FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFilter } from "@fortawesome/free-solid-svg-icons";
 
 const cardsData = [
   {
@@ -38,12 +39,15 @@ const cardsData = [
  const handleColumnClick = (link) => {
    window.location.href = link; // Redirect to the provided link
  };
-const 
-InternshipOffer = () => {
+const  InternshipOffer = () => {
+ const [isOpen, setIsOpen] = useState(false);
+
+  
+
   return (
-    <Container   className=" my-5 py-2 ">
+    <Container className="text-center my-5 py-2 ">
       <p>Internships</p>
-      <h1 className=" mb-3">Latest Internship Offers</h1>
+      <h1 className=" mb-3 ">Latest Internship Offers</h1>
 
       <Row className="my-2  text-start">
         <Col xs={12} md={4} className="">
@@ -54,14 +58,36 @@ InternshipOffer = () => {
                   <h2>Filter</h2>
                 </li>
                 <li className="filtertitle">Location</li>
-                <li>
-                  <select id="internSearch" name="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                </li>
+                <Dropdown style={{ width: "padding:10px" }}>
+                  <Dropdown.Toggle
+                    id="dropdown-basic"
+                    className="custom-dropdown-toggle"
+                    style={{
+                      paddingRight: "0",
+                      background: "navy",
+                      border: "none",
+                    }}
+                  >
+                    <FontAwesomeIcon icon={faFilter} /> Filter
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu className="custom-dropdown-toggle">
+                    <Dropdown className="d-flex justify-content-center">
+                      <select
+                        id="mySelect"
+                        style={{
+                          width: "70%",
+                          padding: "10px",
+                          border: "none",
+                        }}
+                      >
+                        <option value="option1">Mumbai</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                      </select>
+                    </Dropdown>
+                  </Dropdown.Menu>
+                </Dropdown>
               </ul>
             </div>
             <div>
@@ -187,15 +213,18 @@ InternshipOffer = () => {
                   }
                 >
                   <Card.Body className="py-2">
-                    <Card.Title
-                      className="cardtitle-i px-1"
-                      style={{ color: "white", fontSize: "15px" }}
+                    {/* <Card.Title
+                      className="px-1"
+                      style={{ color: "navy", fontSize: "15px" }}
                     >
                       Actively Hired
-                    </Card.Title>
+                    </Card.Title> */}
 
-                    <Card.Text className="pt-2">
+                    <Card.Text className="pt-2 d-flex justify-content-between">
                       <h4>{card.heading}</h4>
+                      <p style={{ color: "navy", fontWeight: "bold" }}>
+                        Actively hired
+                      </p>
                       {/* <p>{card.subheading}</p> */}
                     </Card.Text>
                     <div className="d-flex justify-content-between">
@@ -218,12 +247,12 @@ InternshipOffer = () => {
                       {/* <img src={apply1} alt="" /> */}
                     </div>
                     <div
-                      className="d-flex m-0 p-0 justify-content-around"
+                      className="d-flex m-0 p-0 justify-content-start"
                       style={{ width: "100%" }}
                     >
-                      <span className="l1">Freelancer</span>
-                      <span className="l">Freelancer</span>
-                      <span className="l">Freelancer</span>
+                      <span className="l1 ">Freelancer</span>
+                      <span className="l">Fulltime</span>
+                      <span className="l">Remote</span>
                     </div>
                   </Card.Body>
                   <div className="cardFoot mx-3">

@@ -35,7 +35,7 @@ const Banner = () => {
       <div className="banner container-fluid mb-5">
         <Header />
         <Container fluid className="">
-          <Row className="justify-content-center py-sm-0  py-5 mt-5 mt-sm-0">
+          <Row className="justify-content-center py-sm-0  pt-5 py-sm-0   mt-sm-0">
             <Col xs={12} sm={12} md={6} lg={7}>
               <div className="container bannercontent">
                 <h1

@@ -56,9 +56,17 @@ const ContactUS = () => {
   return (
     <Container>
       <Row className="justify-content-center my-5 py-5">
-        <Col md={6} className="px-3">
+        <Col md={6} className="d-block d-sm-none">
+          <img
+            src={contact}
+            alt=""
+            className="img-fluid"
+            style={{ width: " 100%", maxHeight: "30rem" }}
+          />
+        </Col>
+        <Col md={6} className="px-3" >
           <div className="">
-            <h1>Get in touch</h1>
+            <h1 className="py-2">Get in touch</h1>
             <p>Keep in touch with us for latest updates</p>
             <Form className="text-center" onSubmit={handleSubmit}>
               <Form.Group controlId="formName ">
@@ -230,7 +238,7 @@ const ContactUS = () => {
             </div>
           </div>
         </Col>
-        <Col md={6}>
+        <Col md={6} className="d-none d-lg-block">
           <img
             src={contact}
             alt=""

@@ -62,37 +62,11 @@ const Apply = () => {
         </p>
       </div>
 
-      <Row className="justify-content-center">
+      <Row className="0 justify-content-center">
         <Col md={9}>
           <Form onSubmit={handleSubmit}>
-            {/* <Row className="">
-              <Col>
-                <Form.Group controlId="formName">
-                  <Form.Control
-                    type="text"
-                    placeholder="Name"
-                    className="input"
-                    name="name"
-                    onChange={handleChange}
-                    value={formData.name}
-                  />{" "}
-                </Form.Group>
-              </Col>
-              <Col>
-                <Form.Group controlId="formEmail ">
-                  <Form.Control
-                    type="email"
-                    placeholder="Email"
-                    name="email"
-                    onChange={handleChange}
-                    value={formData.email}
-                  />{" "}
-                </Form.Group>
-              </Col>
-            </Row> */}
-
             <Row className="py-1">
-              <Col >
+              <Col>
                 <Form.Group controlId="formName" className="py-2">
                   <Form.Control
                     type="text"
@@ -104,8 +78,8 @@ const Apply = () => {
                   />{" "}
                 </Form.Group>
               </Col>
-              <Col style={{marginBottom:"0"}}>
-                <Form.Group controlId="formEmail" style={{marginBottom:"0"}} >
+              <Col style={{ marginBottom: "0", paddingTop: "20px" }}>
+                <Form.Group controlId="formEmail" style={{ marginBottom: "0" }}>
                   <Form.Control
                     type="email"
                     placeholder="Email"
@@ -113,8 +87,6 @@ const Apply = () => {
                     onChange={handleChange}
                     value={formData.email}
                   />{" "}
-                 
-              
                 </Form.Group>
               </Col>
             </Row>
@@ -142,7 +114,9 @@ const Apply = () => {
                 </Form.Group>
               </Col>
             </Row>
-
+          </Form>
+          <Row className="justify-content-center">
+            {" "}
             <Button
               variant="primary"
               type="submit"
@@ -157,7 +131,8 @@ const Apply = () => {
             >
               {isLoading ? <div className="loader" /> : "Apply Now"}
             </Button>
-          </Form>
+          </Row>
+
           {/* ------------ pop up box----------------- */}
 
           <Modal

@@ -67,14 +67,14 @@ const cardsData = [
 
 const Courses = () => {
   return (
-    <Container className="internBox my-3 py-3">
+    <Container className="internBox my-3 py-3 text-center">
       <p>All courses</p>
-      <h1>Our Amazing Courses</h1>
+      <h1 className="mb-4">Our Amazing Courses</h1>
       <Row className="py-3">
         {cardsData.map((card) => (
           <Col sm={4} key={card.id} className="py-2">
             <Card
-              className="my-3 effect"
+              className="my-2 effect"
               style={{ borderRadius: "50px" }}
               onClick={() => handleColumnClick("https://app.interncove.com/")}
             >

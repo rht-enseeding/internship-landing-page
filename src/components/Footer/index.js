@@ -11,42 +11,46 @@ const Footer = () => {
     >
       <Container className="py-5">
         <Row>
-          <Col md={4} className="footer-column text-center text-sm-start">
-            <h4>Company</h4>
-            <ul className="list-unstyled">
-              <li>
-                <a href="/">Teacher</a>
-              </li>
-              <li>
-                <a href="/"> Student</a>
-              </li>
-              <li>
-                <a href="/">Instructor</a>
-              </li>
-              <li>
-                <a href="/">Company</a>
-              </li>
-            
-            </ul>
+          <Col md={8}>
+            <Row className="d-flex">
+              <Col md={4} className="footer-column text-center text-sm-start">
+                <h4>Company</h4>
+                <ul className="list-unstyled">
+                  <li>
+                    <a href="/">Teacher</a>
+                  </li>
+                  <li>
+                    <a href="/"> Student</a>
+                  </li>
+                  <li>
+                    <a href="/">Instructor</a>
+                  </li>
+                  <li>
+                    <a href="/">Company</a>
+                  </li>
+                </ul>
+              </Col>
+
+              <Col md={4} className="footer-column text-center text-sm-start">
+                <h4>Resources</h4>
+                <ul className="list-unstyled">
+                  <li>
+                    <a href="/">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="/">Terms and Coditions</a>
+                  </li>
+                  <li>
+                    <a href="/">Blog</a>
+                  </li>
+                  <li>
+                    <a href="/">Contact Us</a>
+                  </li>
+                </ul>
+              </Col>
+            </Row>
           </Col>
 
-          <Col md={4} className="footer-column text-center text-sm-start">
-            <h4>Resources</h4>
-            <ul className="list-unstyled">
-              <li>
-                <a href="/">Privacy  Policy</a>
-              </li>
-              <li>
-                <a href="/">Terms and Coditions</a>
-              </li>
-              <li>
-                <a href="/">Blog</a>
-              </li>
-              <li>
-                <a href="/">Contact Us</a>
-              </li>
-            </ul>
-          </Col>
           <Col md={4} className="footer-column text-center text-sm-start">
             <img src={footer} alt="" />
           </Col>
@@ -84,6 +88,7 @@ const Footer = () => {
         </Row>
       </Container>
     </footer>
+   
   );
 };
 

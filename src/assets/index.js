@@ -23,6 +23,10 @@ import contact from "./Group 1171275570.png";
 import cl from "./cl.png";
 import fax from "./fax.png";
 
+import Interns from "./Interns.png";
+import company from "./company.png";
+import instructor from "./instructor.png";
 
 
-export { cl,fax,  contact, bgapply, banner, rec, footer,icon1, c1,c2,c3,c4,c5,c6,  logo ,apply1,apply2,apply3};
+
+export {Interns,company,instructor, cl,fax,  contact, bgapply, banner, rec, footer,icon1, c1,c2,c3,c4,c5,c6,  logo ,apply1,apply2,apply3};

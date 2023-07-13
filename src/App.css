@@ -3,6 +3,9 @@
     padding-right: 0;
 
 }
+body{
+  overflow-x: hidden;
+}
 /* -----------------------navbar-------------------- */
 
 .model-open{
@@ -13,6 +16,9 @@
 background: transparent;
 /* padding: 1rem !important; */
 }
+
+
+
 
 .navbtn{
   background-color: #6641AA;
@@ -37,7 +43,7 @@ background: transparent;
   
 }
 .Heading-1{
-  font-size: 65px;
+  font-size: 60px;
 }
 @media (max-width: 767px) { /* Adjust the max-width value as needed */
   .Heading-1 {
@@ -52,10 +58,23 @@ background: transparent;
   font-size: 20px;
 }
 /* -----------------------apply now------------------- */
+
+
+.custom-dropdown-toggle {
+  width: 50%; /* Adjust the desired width here */
+  color: navy;
+}
+
+
+
+
+
+
 .cardtitle{
   padding: 10px;
   background-color: #5a518a;
-  width: 55%;
+  /* width: 55%; */
+  border-radius: 10px;
 }
 #internSearch{
   padding: 10px;
@@ -87,7 +106,7 @@ margin-top: 10px;
   background-color:"#6641AA" ;
    padding: 10px;
 }
-.cardtitle-i{
+.cardtitle{
   background-color: #6641AA;
   padding: 15px;
   width: 55%;
@@ -98,17 +117,25 @@ margin-top: 10px;
 }
 .l{
   border: 2px solid rgb(187, 187, 187);
-  padding: 10px;
+  padding: 6px;
+
   border-radius: 50px;
   color: rgb(187, 187, 187);
   /* margin-left: 10px; */
+    font-size: 15px;
+    margin-left: 10px;
+
 }
 .l1{
   background-color:  rgb(187, 187, 187);
-  padding: 10px;
+  padding: 6px;
   border-radius: 50px;
+      margin-left: 10px;
+
   color: white;
   margin-left: 10px;
+  font-size: 15px;
+
 }
 .cardFoot{
   color: orange;

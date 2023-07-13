@@ -28,7 +28,7 @@ function FAQ({ data }) {
         >
           Trending Questions
         </h1>
-        <div className="col-9 col-lg-7 col-sm-8">
+        <div className="col-11 col-lg-7 col-sm-12">
           <div className="row">
             {Accodiondata.map((items) => {
               return <AccordionCard data={items} />;
