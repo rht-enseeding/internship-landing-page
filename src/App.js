@@ -21,13 +21,12 @@ import Company from './components/Company';
 function App() {
   return (
     <>
-      {" "}
       {/* <Header /> */}
       <Banner />
       <Applynow />
       <Intern />
       <Instructor />
-      <Company/>
+      <Company />
       <InternshipOffer />
       <Courses />
       <InternshipCourses />
@@ -38,9 +37,6 @@ function App() {
       {/* <Subscribe/> */}
       <Footer />
     </>
-    // <div className="App">
-
-    // </div>
   );
 }
 

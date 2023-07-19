@@ -8,7 +8,7 @@ import { Modal } from "react-bootstrap";
 
 const ContactUS = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
-    const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
 
   const [formData, setFormData] = useState({
@@ -24,38 +24,46 @@ const ContactUS = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const currentDate = new Date().toISOString();
-      const postData = {
-        name: formData.name,
-        email: formData.email,
-        createdOn: currentDate,
-        contactNumber: formData.contactNumber,
-        message: formData.message,
-      };
-      console.log(postData);
-        setIsLoading(true);
-      const response = await axios.post(
+
+    const currentDate = new Date().toISOString();
+    const postData = {
+      name: formData.name,
+      email: formData.email,
+      createdOn: currentDate,
+      contactNumber: formData.contactNumber,
+      message: formData.message,
+    };
+    console.log(postData);
+    setIsLoading(true);
+
+    setTimeout(() => {
+      axios.post(
         "https://enseedling-backend.onrender.com/contact/create",
         // JSO(postData)
         postData
-      );
-      console.log(response.data); // Handle the response as needed
-      // Reset the form
+      )
+        .then((response) => {
 
-      // Show pop-up after successful form submission
-      setIsSubmitted(true);
-      
+          console.log(response.data); // Handle the response as needed
+          // Reset the form
+          setIsLoading(false);
 
+          // Show pop-up after successful form submission
+          setIsSubmitted(true);
+        })
+        .catch((error) => {
+          console.error(error);
+          setIsLoading(false);
+
+        });
 
       setFormData({ name: "", email: "", contactNumber: "", message: "" });
-    } catch (error) {
-      console.error(error);
-    }
+    }, 5000); // Adjust the delay as needed (in milliseconds)
+
   };
   return (
-    <Container>
-      <Row className="justify-content-center my-5 py-5">
+    <Container className="contactus mb-5">
+      <Row className="justify-content-center align-items-center mt-5 pt-5">
         <Col md={6} className="d-block d-sm-none">
           <img
             src={contact}
@@ -115,10 +123,11 @@ const ContactUS = () => {
                   rows="3"
                   placeholder="Enter message..."
                   style={{
-                    width: "97%",
+                    width: "100%",
                     border: "2px solid #f5f5f5",
                     borderRadius: "5px",
                     padding: "10px",
+                    margin: "10px"
                   }}
                   onChange={handleChange}
                   value={formData.message}
@@ -138,14 +147,9 @@ const ContactUS = () => {
 
               <Button
                 type="submit"
-                className="w-100"
-                style={{
-                  margin: "10px",
-                  padding: "10px",
-                  backgroundColor: "#16094F",
-                  textAlign: "center",
-                }}
-                disabled={isLoading}
+                className="w-100 contactussubmitbtn"
+                disabled={!formData.name || !formData.email || !formData.message || !formData.contactNumber || isLoading}
+
               >
                 {isLoading ? <div className="loader" /> : "Submit"}
               </Button>
@@ -188,10 +192,10 @@ const ContactUS = () => {
           </Modal>
           {/* -------------------------- */}
 
-          <div className=" col-12 d-flex justify-content-start   col-md-6 col-lg-4 my-1 py-3 py-md-1">
+          <div className="contactfootgap col-12 d-flex justify-content-start   col-md-6 col-lg-4 my-1 py-3 py-md-1">
             <div
-              className="justify-content-center align-items-start mx-5 py-3 "
-              // style={carde}
+              className="d-flex justify-content-center gap-3 align-items-center mx-1 py-3 "
+            // style={carde}
             >
               <div
                 className="col-3 icon rounded-circle my-3 d-flex justify-content-center align-items-center "
@@ -205,17 +209,17 @@ const ContactUS = () => {
               </div>
               <div className="col-7 text-start">
                 <div>
-                  <text className="Heading-2 ">Phone</text>
+                  <text className="Heading-2 contactusfooth">Phone</text>
                 </div>
-                <div>
-                  <text className="Text-1 py-1">+1478246-0224</text>
+                <div className=" contactusfootp">
+                  +1478246-0224
                 </div>
               </div>
             </div>
 
             <div
-              className="justify-content-center align-items-start  p-2 py-3 "
-              // style={carde}
+              className="d-flex gap-3 justify-content-center align-items-center  p-2 py-3 "
+            // style={carde}
             >
               <div
                 className="col-3 icon rounded-circle my-3 d-flex justify-content-center align-items-center "
@@ -229,10 +233,10 @@ const ContactUS = () => {
               </div>
               <div className="col-7 text-start">
                 <div>
-                  <text className="Heading-2 ">Email</text>
+                  <text className="Heading-2 contactusfooth">Email</text>
                 </div>
-                <div>
-                  <text className="Text-1 py-1">contact@enseedling.com</text>
+                <div className="contactusfootp">
+                  contact@enseedling.com
                 </div>
               </div>
             </div>

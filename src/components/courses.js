@@ -10,7 +10,7 @@ const cardsData = [
     image: c1,
     heading: "Graphic Design",
     icons: [icon1, "icon2", "icon3", "icon4"],
-     rating: "4.5",
+    rating: "4.5",
     lesson: "10 Lessons",
     views: "23,000",
   },
@@ -28,7 +28,7 @@ const cardsData = [
     image: c3,
     heading: "Full Stack Development",
     icons: ["icon1", "icon2", "icon3", "icon4"],
-     rating: "4.5",
+    rating: "4.5",
     lesson: "13 Lessons",
     views: "12,000",
   },
@@ -37,7 +37,7 @@ const cardsData = [
     image: c4,
     heading: "Data Analytics",
     icons: ["icon1", "icon2", "icon3", "icon4"],
-     rating: "4.0",
+    rating: "4.0",
     lesson: "16 Lessons",
     views: "30,001",
   },
@@ -46,7 +46,7 @@ const cardsData = [
     image: c5,
     heading: "Artificial Intelligence",
     icons: ["icon1", "icon2", "icon3", "icon4"],
-      rating: "5.0",
+    rating: "5.0",
     lesson: "15 Lessons",
     views: " 22,280",
   },
@@ -61,35 +61,31 @@ const cardsData = [
   },
 ];
 
- const handleColumnClick = (link) => {
-   window.location.href = link; // Redirect to the provided link
- };
+const handleColumnClick = (link) => {
+  window.location.href = link; // Redirect to the provided link
+};
 
 const Courses = () => {
   return (
-    <Container className="internBox my-3 py-3 text-center">
-      <p>All courses</p>
-      <h1 className="mb-4">Our Amazing Courses</h1>
+    <Container className="internBox my-3 py-5 text-center">
+      <p className="allcoursesp">All courses</p>
+      <h1 className="mb-4 allcoursesh1">Our Amazing Courses</h1>
       <Row className="py-3">
         {cardsData.map((card) => (
           <Col sm={4} key={card.id} className="py-2">
             <Card
-              className="my-2 effect"
-              style={{ borderRadius: "50px" }}
+              className="my-2 effect allcoursescard"
+
               onClick={() => handleColumnClick("https://app.interncove.com/")}
             >
               <Card.Img
-                variant="top"
+                // variant="top"
                 src={card.image}
-                style={{
-                  borderTopLeftRadius: "50px",
-                  borderTopRightRadius: "50px",
-                  height: "30vh",
-                }}
+                className="allcoursescardimg"
               />
               <Card.Body className="text-start">
-                <Card.Title>{card.heading}</Card.Title>
-                <p>8 weeks course</p>
+                <Card.Title className="allcoursescardhead">{card.heading}</Card.Title>
+                <p className="allcoursescardp">8 weeks course</p>
                 <Card.Text>{/* Additional dynamic content */}</Card.Text>
                 {/* <Card.Footer>
                   {card.icons.map((icon, index) => (
@@ -98,24 +94,24 @@ const Courses = () => {
                     </span>
                   ))}
                 </Card.Footer> */}
-                <Card.Footer style={{ background: "none" }}>
-                  <div className="d-flex justify-content-between p-2">
+                <Card.Footer className="ps-0" style={{ background: "none" }}>
+                  <div className="d-flex gap-5 py-2">
                     {" "}
                     <span>
                       {" "}
                       <FaStar color="rgb(245, 221, 5)" />
                       &nbsp;&nbsp; {card.rating}
                     </span>
-                    <span>
+                    <span className="ps-5">
                       {" "}
                       <FaEye color="blue" />
                       &nbsp;&nbsp; {card.views}
                     </span>
                   </div>
-                  <div className="d-flex justify-content-between p-2">
+                  <div className="d-flex gap-5 py-2">
                     <span>
                       {" "}
-                      <FaBook color="green" /> &nbsp;&nbsp; {card.lesson}
+                      <FaBook color="green" /> &nbsp;{card.lesson}
                     </span>
                     <span>
                       <FaClock color="orange" />
@@ -128,16 +124,17 @@ const Courses = () => {
           </Col>
         ))}
       </Row>
-      <Row className="justify-content-center">
+      <Row className="justify-content-center  mt-5">
         <button
           style={{
-            width: "300px",
-            padding: "20px",
+            width: "181px",
+            height: "50px",
+            borderRadius: "5px",
             background: "none",
-            color: "orange",
-            border: "2px solid orange",
-            fontSize: "20px",
-            fontWeight: "bold",
+            color: "#E5761A",
+            border: "2px solid #E5761A",
+            fontSize: "18px",
+            fontWeight: "400",
           }}
           onClick={() => handleColumnClick("https://app.interncove.com/")}
           className="effect"

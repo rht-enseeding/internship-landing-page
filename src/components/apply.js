@@ -1,72 +1,72 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import { Modal,Image } from "react-bootstrap";
+import { Modal, Image } from "react-bootstrap";
 
 const Apply = () => {
-      const [isSubmitted, setIsSubmitted] = useState(false);
-    const [isLoading, setIsLoading] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
-  
-  
- const [formData, setFormData] = useState({
-   name: "",
-   email: "",
-   contactNumber: "",
-   message: "",
- });
 
- const handleChange = (e) => {
-   setFormData({ ...formData, [e.target.name]: e.target.value });
- };
 
- const handleSubmit = async (e) => {
-   e.preventDefault();
-   try {
-     const currentDate = new Date().toISOString();
-     const postData = {
-       name: formData.name,
-       email: formData.email,
-       createdOn: currentDate,
-       contactNumber: formData.contactNumber,
-       message: formData.message,
-     };
-     console.log(postData);
-             setIsLoading(true);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    contactNumber: "",
+    message: "",
+  });
 
-     const response = await axios.post(
-       "https://enseedling-backend.onrender.com/contact/create",
-       // JSO(postData)
-       postData
-     );
-     console.log(response.data); // Handle the response as needed
-     
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const currentDate = new Date().toISOString();
+      const postData = {
+        name: formData.name,
+        email: formData.email,
+        createdOn: currentDate,
+        contactNumber: formData.contactNumber,
+        message: formData.message,
+      };
+      console.log(postData);
+      setIsLoading(true);
+
+      const response = await axios.post(
+        "https://enseedling-backend.onrender.com/contact/create",
+        // JSO(postData)
+        postData
+      );
+      console.log(response.data); // Handle the response as needed
+
       // Show pop-up after successful form submission
       setIsSubmitted(true);
-     
-     // Reset the form
-     setFormData({ name: "", email: "", contactNumber: "", message: "" });
-   } catch (error) {
-     console.error(error);
-   }
- };
+
+      // Reset the form
+      setFormData({ name: "", email: "", contactNumber: "", message: "" });
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
 
 
   return (
-    <Container className="py-5 applybg my-5">
+    <Container className="py-5 applybg my-5   d-none d-md-block">
       <div className="text-start px-5" style={{ color: "white" }}>
-        <h2>Apply for internship</h2>
+        <h2 className="applyh1">Apply for internship</h2>
         <p className="py-2" style={{ fontWeight: "bold" }}>
           We will get back to you as soon as possible
         </p>
       </div>
 
-      <Row className="0 justify-content-center">
-        <Col md={9}>
+      <Row className="0 px-5 applyform">
+        <Col md={12}>
           <Form onSubmit={handleSubmit}>
-            <Row className="py-1">
-              <Col>
+            <Row className="py-3">
+              <Col >
                 <Form.Group controlId="formName" className="py-2">
                   <Form.Control
                     type="text"
@@ -75,6 +75,7 @@ const Apply = () => {
                     name="name"
                     onChange={handleChange}
                     value={formData.name}
+
                   />{" "}
                 </Form.Group>
               </Col>
@@ -120,13 +121,8 @@ const Apply = () => {
             <Button
               variant="primary"
               type="submit"
-              style={{
-                width: "50%",
-                backgroundColor: "#16094F",
-                color: "white",
-                border: "none",
-              }}
-              className="my-5"
+              className="applybtn my-5"
+
               disabled={isLoading}
             >
               {isLoading ? <div className="loader" /> : "Apply Now"}

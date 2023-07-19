@@ -4,12 +4,7 @@ import { apply1, apply2, apply3 } from "../assets";
 // import { history, maldive1, mission, vssion } from "../../assets";
 
 const ApplyNow = () => {
-  const customStyle = {
-    width: "55%",
-    "@media (min-width: 992px)": {
-      width: "100%",
-    },
-  };
+
   const carde = {
     //  color: "#6641AA",
     //  fontWeight: "800",
@@ -18,11 +13,11 @@ const ApplyNow = () => {
     borderRadius: "15px",
     height: "100%",
     maxHeight: "auto",
-      background: "#2D1D64",
-color:"white",
+    background: "#2D1D64",
+    color: "white",
 
     // margin: "20px",
-    padding:"15px"    
+    padding: "15px 6px"
   };
   const topic = {
     fontWeight: "bolder",
@@ -30,9 +25,9 @@ color:"white",
     margin: "5px",
     color: "teal",
   };
-    const handleColumnClick = (link) => {
-      window.location.href = link; // Redirect to the provided link
-    };
+  const handleColumnClick = (link) => {
+    window.location.href = link; // Redirect to the provided link
+  };
 
   const para = {};
   return (
@@ -44,20 +39,20 @@ color:"white",
           className="effect"
         >
           <Card.Body>
-            <Card.Title className="cardtitle " style={customStyle}>
-              Internship Training
+            <Card.Title className="cardtitle " >
+              Guarantee Courses
             </Card.Title>
 
             <Card.Text className="pt-4">
-              <h3>100% Internship Guaranteed Courses Available</h3>
+              <h3 className="cardtext">100% Internship Guaranteed Courses Available</h3>
             </Card.Text>
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between align-items-center">
               <Card.Text className="pt-4">
                 <h3
                   style={{
-                    color: "#FF9900",
-                    fontSize: "25px",
-                    fontWeight: "bold",
+                    color: "#F90",
+                    fontSize: "23px",
+                    fontWeight: "700",
                   }}
                 >
                   APPLY NOW
@@ -75,20 +70,20 @@ color:"white",
           className="effect"
         >
           <Card.Body>
-            <Card.Title className="cardtitle" style={customStyle}>
+            <Card.Title className="cardtitle" >
               Internship Training
             </Card.Title>
 
             <Card.Text className="pt-4">
-              <h3>Join us in Best-in-Class Certification Training</h3>
+              <h3 className="cardtext">Join us in Best-in-Class Certification Training</h3>
             </Card.Text>
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between align-items-center">
               <Card.Text className="pt-4">
                 <h3
                   style={{
-                    color: "#FF9900",
-                    fontSize: "25px",
-                    fontWeight: "bold",
+                    color: "#F90",
+                    fontSize: "23px",
+                    fontWeight: "700",
                   }}
                 >
                   APPLY NOW
@@ -106,20 +101,20 @@ color:"white",
           className="effect"
         >
           <Card.Body>
-            <Card.Title className="cardtitle" style={customStyle}>
-              Internship Training
+            <Card.Title className="cardtitle" >
+              Trending Jobs
             </Card.Title>
 
             <Card.Text className="pt-4">
-              <h3>Amazing Opportunities Available Now</h3>
+              <h3 className="cardtext">Amazing Opportunities Available Now</h3>
             </Card.Text>
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between align-items-center">
               <Card.Text className="pt-4">
                 <h3
                   style={{
-                    color: "#FF9900",
-                    fontSize: "25px",
-                    fontWeight: "bold",
+                    color: "#F90",
+                    fontSize: "23px",
+                    fontWeight: "700",
                   }}
                 >
                   APPLY NOW

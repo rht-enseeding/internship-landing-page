@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+"@popperjs/core": "^2.11.8",
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

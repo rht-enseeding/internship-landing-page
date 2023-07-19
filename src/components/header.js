@@ -8,15 +8,15 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { logo } from '../assets';
 
 function Header() {
-   const handleColumnClick = (link) => {
-     window.location.href = link; // Redirect to the provided link
-   };
+  const handleColumnClick = (link) => {
+    window.location.href = link; // Redirect to the provided link
+  };
   return (
     <>
       {["md"].map((expand) => (
         <Navbar key={expand} expand={expand} className="Navbar">
-          <Container fluid>
-            <Navbar.Brand href="#">
+          <Container fluid className='headcustom'>
+            <Navbar.Brand href="#" className='headcustomimg'>
               <img src={logo} alt="" style={{ height: "70px" }} />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -24,16 +24,14 @@ function Header() {
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
-              style={{width:"60%"}}
+              style={{ width: "60%" }}
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
-                </Offcanvas.Title>
+
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3 mx-2">
-                  <Nav.Link href="#action1" id="navlink" className="headlink">
+                <Nav className="justify-content-end align-items-center flex-grow-1 pe-3 mx-2">
+                  <Nav.Link href="#action1" id="navlink" className="headlinkactive headlink">
                     Home
                   </Nav.Link>
                   <Nav.Link href="#action1" id="navlink" className="headlink">
@@ -45,20 +43,20 @@ function Header() {
                   <Nav.Link href="#action1" id="navlink" className="headlink">
                     Employer
                   </Nav.Link>
-                  <Nav.Link
+                  {/* <Nav.Link
                     href="https://app.interncove.com/"
                     id="navlink"
                     className="headlink"
                   >
                     Login
-                  </Nav.Link>
+                  </Nav.Link> */}
                   <button
-                    className="navbtn px-1 effect"
+                    className="navbtn  effect"
                     onClick={() =>
                       handleColumnClick("https://app.interncove.com/")
                     }
                   >
-                    Register
+                    Login
                   </button>
                 </Nav>
               </Offcanvas.Body>

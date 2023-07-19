@@ -20,7 +20,7 @@ const cardsData = [
     id: 2,
     image: c2,
     heading: "Machine Learning",
-    desc: "Maximize your brand's online presence and dominate the digital landscape with our cutting-edge digital marketing course",
+    desc: "Unlock your creativity and master the art of graphic design with our comprehensive course.",
     icons: ["icon1", "icon2", "icon3", "icon4"],
     rating: "2.7",
     lesson: "10 Lessons",
@@ -30,7 +30,7 @@ const cardsData = [
     id: 3,
     image: c3,
     heading: "Full stack developemnet ",
-    desc: "Master the art of full-stack development and unlock limitless possibilities with our comprehensive course",
+    desc: "Unlock your creativity and master the art of graphic design with our comprehensive course.",
     icons: ["icon1", "icon2", "icon3", "icon4"],
     rating: "4.5",
     lesson: "13 Lessons",
@@ -40,7 +40,7 @@ const cardsData = [
     id: 4,
     image: c4,
     heading: "Data Analytics",
-    desc: "Unlock the power of data and master the art of analytics with our comprehensive data analytics course",
+    desc: "Unlock your creativity and master the art of graphic design with our comprehensive course.",
     icons: ["icon1", "icon2", "icon3", "icon4"],
     rating: "4.0",
     lesson: "16 Lessons",
@@ -50,8 +50,7 @@ const cardsData = [
     id: 5,
     image: c5,
     heading: "Artifical Intelligence",
-    desc: "Unlock the power of AI and revolutionize your business with our cutting-edge AI course",
-
+    desc: "Unlock your creativity and master the art of graphic design with our comprehensive course.",
     icons: ["icon1", "icon2", "icon3", "icon4"],
     rating: "5.0",
     lesson: "15 Lessons",
@@ -61,7 +60,7 @@ const cardsData = [
     id: 6,
     image: c6,
     heading: "Digital Marketing",
-    desc: "Master the art of digital marketing and skyrocket your online success with our comprehensive course.",
+    desc: "Unlock your creativity and master the art of graphic design with our comprehensive course.",
     icons: ["icon1", "icon2", "icon3", "icon4"],
     rating: "3.5",
     lesson: "9 Lessons",
@@ -70,33 +69,33 @@ const cardsData = [
 ];
 
 const InternshipCourses = () => {
-    const handleColumnClick = (link) => {
-      window.location.href = link; // Redirect to the provided link
-    };
+  const handleColumnClick = (link) => {
+    window.location.href = link; // Redirect to the provided link
+  };
 
 
   return (
     <>
       <Container className="internBox my-5 py-5 text-center">
-        <p style={{ color: "#6641AA", fontWeight: "bold", marginBottom: "0" }}>
+        <p className="guranteCoursep" >
           Reasonable Courses
         </p>
-        <h1 className="mb-2"> Guaranteed Internship Courses</h1>
+        <h1 className="mb-5 guranteCourseh1 "> Guaranteed Internship Courses</h1>
         <Row>
           {cardsData.map((card) => (
             <Col sm={4} key={card.id}>
               <Card
-                className="my-2 effect"
+                className="my-2 effect guranteeCoursecard"
                 onClick={() => handleColumnClick("https://app.interncove.com/")}
               >
                 <Card.Img
                   variant="top"
                   src={card.image}
-                  style={{ height: "30vh" }}
+                  className="guranteeCourseCardimg"
                 />
                 <Card.Body className="text-start">
-                  <Card.Title>{card.heading}</Card.Title>
-                  <p style={{ height: "10vh" }}>{card.desc}</p>
+                  <Card.Title className="guranteecoursecardtitle">{card.heading}</Card.Title>
+                  <p className="guranteecoursecardbodyp" >{card.desc}</p>
                   <Card.Text>{/* Additional dynamic content */}</Card.Text>
                   {/* <Card.Footer>
                   {card.icons.map((icon, index) => (
@@ -105,27 +104,27 @@ const InternshipCourses = () => {
                     </span>
                   ))}
                 </Card.Footer> */}
-                  <Card.Footer style={{ background: "none" }}>
-                    <div className="d-flex justify-content-between p-2">
+                  <Card.Footer style={{ background: "none", paddingLeft: "0px" }}>
+                    <div className="d-flex  gap-5 p-2 ">
                       {" "}
                       <span>
                         {" "}
                         <FaStar color="rgb(245, 221, 5)" />
                         &nbsp;&nbsp;{card.rating}
                       </span>
-                      <span>
+                      <span className="ps-5">
                         {" "}
                         <FaEye color="blue" />
                         &nbsp;&nbsp; {card.views}
                       </span>
                     </div>
-                    <div className="d-flex justify-content-between p-2">
+                    <div className="d-flex gap-4  p-2">
                       <span>
                         {" "}
                         <FaBook color="green" /> &nbsp;&nbsp;{card.lesson}
                       </span>
-                      <span>
-                        <FaClock color="orange" />
+                      <span >
+                        <FaClock color="orange" className="ms-2" />
                         &nbsp;&nbsp; 3 hours
                       </span>
                     </div>
@@ -137,6 +136,8 @@ const InternshipCourses = () => {
                       color: "white",
                       padding: "8px",
                       border: "none",
+                      fontSize: "17px",
+                      fontWeight: "600",
                       borderRadius: "5px",
                     }}
                   >

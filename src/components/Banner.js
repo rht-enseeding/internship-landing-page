@@ -11,52 +11,56 @@ const Banner = () => {
   const handleColumnClick = (link) => {
     window.location.href = link; // Redirect to the provided link
   };
-    const carde = {
-      //  color: "#6641AA",
-      //  fontWeight: "800",
-      border: "none",
-      textAlign: "start",
-      borderRadius: "15px",
-      height: "100%",
-      maxHeight: "auto",
-      background: "#2D1D64",
-      color: "white",
+  const carde = {
+    //  color: "#6641AA",
+    //  fontWeight: "800",
+    border: "none",
+    textAlign: "start",
+    borderRadius: "15px",
+    height: "100%",
+    maxHeight: "auto",
+    background: "#2D1D64",
+    color: "white",
 
-      // margin: "20px",
-      padding: "15px",
-    };
-    const topic = {
-      fontWeight: "bolder",
-      fontSize: "25px",
-      margin: "5px",
-      color: "teal",
-    };
-    return (
-      <div className="banner container-fluid mb-5">
-        <Header />
-        <Container fluid className="">
-          <Row className="justify-content-center py-sm-0  pt-5 py-sm-0   mt-sm-0">
-            <Col xs={12} sm={12} md={6} lg={7}>
-              <div className="container bannercontent">
-                <h1
-                  className="Heading-1 m-1 text-center"
-                  style={{ color: "gray", textAlign: "center" }}
+    // margin: "20px",
+    padding: "15px",
+  };
+  const topic = {
+    fontWeight: "bolder",
+    fontSize: "25px",
+    margin: "5px",
+    color: "teal",
+  };
+  return (
+    <div className="banner container-fluid mb-5">
+      <Header />
+      <Container fluid className="mt-5" >
+        <Row className="justify-content-center py-sm-0  pt-5 py-sm-0   mt-sm-0">
+          <Col xs={12} sm={12} md={6} lg={7}>
+            <div className="container bannercontent">
+              <h1
+                className="Heading-1  text-center bannerh1"
+
+              >
+                <span className="bannerh1span">Opportunities </span>
+                Don't Just Happen, You Create Them
+              </h1>
+              <br />
+              <div className="">
+                <p
+                  className="Text-1 text-center para  bannertext"
+
                 >
-                  <span style={{ color: "navy" }}>Opportunities </span>
-                  don't just happen , you create them{" "}
-                </h1>
-                <br />
-                <div className="py-2 my-1">
-                  <p
-                    className="Text-1 text-center para"
-                    style={{ color: "gray" }}
-                  >
-                    Search for temporary jobs at state of the art new
-                    businesses, enormous brand multinationals, or in the middle
-                    between. Your vocation begins here.
-                  </p>
-                </div>
-                {/* <Row className="justify-content-center">
+                  Search for temporary jobs at state of the art new
+                  businesses, enormous brand multinationals, or in the middle
+                  between. Your vocation begins here.
+                </p>
+              </div>
+              <div className="applynow">
+                <input type="text" placeholder="Enter your Email" />
+                <button>Apply Now</button>
+              </div>
+              {/* <Row className="justify-content-center">
                   <Col xs={12} sm={8} md={6} lg={10} className="inputBox">
                     <form>
                       <div className="mb-3 d-flex ">
@@ -72,10 +76,10 @@ const Banner = () => {
                     </form>
                   </Col>
                 </Row> */}
-              </div>
-            </Col>
-          </Row>
-          {/* <Row>
+            </div>
+          </Col>
+        </Row>
+        {/* <Row>
             <div className="col-12  d-flex justify-content-center col-md-6 col-lg-4  py-2 py-md-1 text-start">
               <Card
                 style={carde}
@@ -170,10 +174,10 @@ const Banner = () => {
               </Card>
             </div>
           </Row> */}
-          {/* <ApplyNow /> */}
-        </Container>
-      </div>
-    );
+        {/* <ApplyNow /> */}
+      </Container>
+    </div>
+  );
 };
 
 export default Banner;
