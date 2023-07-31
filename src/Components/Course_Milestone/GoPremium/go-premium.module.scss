@@ -1,0 +1,115 @@
+@import "../../../Styles/helperStyle/helper";
+
+.mainBox1 {
+  // width: 740px;
+  // height: 324px;
+  width: 100%;
+  height: auto;
+  background: rgba(211, 248, 188, 0.301);
+  //   opacity: 0.3;
+  border-radius: 5px;
+  display: flex;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+}
+
+.goPremiumBox {
+  width: 70%;
+}
+.ImgMaindiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.Img1 {
+  // width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+.h1 {
+  @include fontStyle1(700, 33, 41);
+  color: #000000;
+  margin-bottom: 15px;
+}
+.h2 {
+  @include fontStyle1(400, 17, 25);
+  color: rgba(66, 66, 66, 0.9);
+  margin-bottom: 30px;
+  // width: 360px;
+}
+
+.Button1 {
+  width: 132px;
+  height: 44px;
+  background: rgba(89, 231, 3, 0.86);
+  border-radius: 5px;
+  @include fontStyle1(600, 15, 19);
+  color: #ffffff;
+  margin-left: 0px !important;
+
+  &:hover {
+    background: rgba(89, 231, 3, 0.86);
+    border-radius: 5px;
+    color: #ffffff;
+  }
+}
+
+@include media(1200px) {
+  .goPremiumBox {
+    width: 100% !important;
+  }
+  .ImgMaindiv {
+    width: 40%;
+  }
+  .Img1 {
+    // width: 400px;
+    width: 150px;
+    height: auto;
+  }
+}
+@include media(780px) {
+  .mainBox1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .Img1 {
+    width: 100%;
+    height: auto;
+  }
+  .ImgMaindiv {
+    width: 100%;
+  }
+  .goPremiumBox {
+    width: 100% !important;
+  }
+}
+
+@include media(440px) {
+  .Img1 {
+    width: 100%;
+    height: auto;
+  }
+  .ImgMaindiv {
+    width: 50%;
+    height: auto;
+  }
+  .goPremiumBox {
+    width: 100% !important;
+  }
+  .h1 {
+    @include fontStyle1(700, 18, 28);
+    margin-bottom: 10px;
+  }
+  .h2 {
+    @include fontStyle1(400, 10, 16);
+    margin-bottom: 10px;
+  }
+  .Button1 {
+    width: 100px;
+    height: 34px;
+  }
+}

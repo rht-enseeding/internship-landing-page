@@ -1,0 +1,29 @@
+@import "../../Styles/helperStyle/helper";
+
+.addprojectHeader {
+  display: flex;
+  //   justify-content: space-between;
+  width: 100%;
+}
+.addprojectHeader2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.addprojectH1 {
+  @include fontStyle1(700, 34, 42.74);
+  color: #000000;
+}
+
+.drawerDiv {
+  width: 70% !important;
+  padding-left: 40px;
+}
+
+@include media(800px) {
+  .drawerDiv {
+    width: 100% !important;
+    padding-left: 20px;
+  }
+}

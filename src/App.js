@@ -1,42 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
-
 import "bootstrap/dist/css/bootstrap.min.css";
-import Header from './components/header';
-import Banner from './components/Banner';
-import Applynow from './components/Applynow';
-import InternshipOffer from './components/InternshipOffer';
-import Courses from './components/courses';
-import FAQ from './components/faq.js';
-import Footer from './components/Footer';
-import InternshipCourses from './components/InternshipCourse';
-import Apply from './components/apply';
-import ContactUS from './components/contact';
-
-import Intern from './components/Interns';
-import Instructor from './components/Instructor';
-import CompanyPic from './components/CompanyPic';
-import Company from './components/Company';
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import AppRouter from "./Router/AppRouter";
+import PrivateRouter from "./Router/PrivateRouter";
+import Cookies from 'js-cookie';
+import { useState } from "react";
+import { useSelector } from "react-redux";
 
 function App() {
+  const { userinfo, userstatus } = useSelector((state)=> state.userInfo)
+  // console.log(userstatus);
+  // const [user, setUser] = useState(Cookies.get("userStatus")==="true" ? true : false)
+  // const [userinfo, setUserinfo] = useState(user ? JSON.parse(Cookies.get('user')) : [])
+  const [token, setToken] = useState(userstatus ? Cookies.get('token') : "")
+  // useEffect(() => {
+  //   console.log(Cookies.get("user"))
+  //   console.log(Cookies.get("userStatus"))
+  //   console.log(Cookies.get("token"))
+  //   console.log(user);
+  //   console.log(userinfo);
+  //   console.log(token);
+
+  // }, [])
+  
   return (
-    <>
-      {/* <Header /> */}
-      <Banner />
-      <Applynow />
-      <Intern />
-      <Instructor />
-      <Company />
-      <InternshipOffer />
-      <Courses />
-      <InternshipCourses />
-      <CompanyPic />
-      <FAQ />
-      <Apply />
-      <ContactUS />
-      {/* <Subscribe/> */}
-      <Footer />
-    </>
+    <div className="app">
+      {!userstatus ? (
+        <PrivateRouter
+          user={userstatus}
+          // setUser={setUser}
+          userinfo={userinfo}
+          // setUserinfo={setUserinfo}
+          token={token}
+          setToken={setToken}
+        />
+      ) : (
+        <AppRouter
+          user={userstatus}
+          // setUser={setUser}
+          userinfo={userinfo}
+          // setUserinfo={setUserinfo}
+          token={token}
+          setToken={setToken}
+        />
+      )}
+      {/* <AppRouter/> */}
+    </div>
   );
 }
 

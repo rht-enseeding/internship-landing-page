@@ -1,0 +1,14 @@
+@mixin media($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin fontStyle1($fw, $fs, $lH) {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: $fw;
+  font-size: $fs + px;
+  line-height: $lH + px;
+  letter-spacing: -0.01em;
+}

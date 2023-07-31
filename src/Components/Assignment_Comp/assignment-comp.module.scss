@@ -1,0 +1,15 @@
+@import "../../Styles/helperStyle/helper";
+.h1 {
+  @include fontStyle1(700, 30, 38);
+  color: #000000;
+  padding-left: 20px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.secondDiv {
+  width: 100%;
+  background-color: rgba(217, 217, 217, 0.3);
+  border-radius: 5px;
+  padding: 34px 22px;
+}

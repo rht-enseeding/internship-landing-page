@@ -1,0 +1,86 @@
+@import "../../../../Styles/helperStyle/helper";
+
+.h1 {
+  margin-top: 41px;
+  @include fontStyle1(700, 30, 38);
+  color: #000000;
+  margin-bottom: 38px;
+}
+
+.cardBox {
+  //   width: 255px;
+  width: 100%;
+  height: 250px;
+  background: #faf9ff;
+  border-radius: 10px;
+  padding: 23px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //   align-items: center;
+}
+.cardBoxH1 {
+  @include fontStyle1(600, 23, 29);
+  color: #000000;
+  display: flex;
+  justify-content: center;
+}
+.cardBoxH2 {
+  @include fontStyle1(400, 15, 19);
+  color: #616161;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 23px;
+}
+.ImgBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 17px;
+}
+.Img1Div {
+  display: flex;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+}
+
+.progressMainDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.progressH1 {
+  @include fontStyle1(600, 14, 18);
+  color: #a6a4a4;
+  margin-bottom: 7px;
+}
+.progressH2 {
+  @include fontStyle1(600, 12, 15);
+  color: #2d1d64;
+}
+
+@include media(440px) {
+  .cardBoxH1 {
+    font-size: 18px;
+    line-height: 29px;
+  }
+  .cardBoxH2 {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .progressH1 {
+    @include fontStyle1(600, 14, 18);
+    color: #a6a4a4;
+    margin-bottom: 7px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .progressH2 {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .progressMainDiv {
+    margin-bottom: 2px;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../../Styles//helperStyle/helper";
+
+.buttonMainDiv {
+  //   width: 188px;
+  height: 38px;
+  background: rgba(217, 217, 217, 0.4);
+  border-radius: 5px;
+  display: flex;
+  color: #42424280;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+
+  &:hover {
+    background: rgba(217, 217, 217, 0.4);
+    color: #42424280;
+  }
+}
+
+.divider {
+  border-left: 1.5px solid #42424280;
+  height: 15px;
+  margin-left: 8px;
+  margin-right: 8px;
+}

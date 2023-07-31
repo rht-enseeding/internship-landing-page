@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+.navigation-bar {
+  background: #2d1d64;
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  // width: 314px;
+  width: 260px;
+  font-family: "Source Sans Pro";
+  color: #ffffff;
+  height: fit-content; 
+  min-height: 100vh;
+  .large-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #2d1d64;
+    // background-position: bottom right;
+    // padding-top: 30px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    // top: 0;
+    min-height: 100%;
+    .logo {
+      padding-left: 30px;
+      margin-bottom: 35px;
+      .logo-up {
+        font-style: italic;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 38px;
+        /* identical to box height */
+
+        letter-spacing: -0.01em;
+        span {
+          color: #ff9800;
+        }
+      }
+      .logo-below {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        /* identical to box height */
+
+        letter-spacing: -0.01em;
+
+        color: #cccccc;
+      }
+    }
+    .link-area {
+      .link {
+        padding-left: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: -0.01em;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        span {
+          margin-right: 1rem;
+        }
+      }
+      .active {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: -0.01em;
+
+        border-left: 3px solid #ff9800;
+        color: #ff9800;
+      }
+    }
+    .nav-divider {
+      width: 304px;
+      height: 1px;
+
+      margin: 3rem 0;
+
+      background: rgba(217, 217, 217, 0.1);
+    }
+    .large-below {
+      .link {
+        padding-left: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: -0.01em;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        span {
+          margin-right: 1rem;
+        }
+      }
+      .active {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: -0.01em;
+
+        border-left: 3px solid #ff9800;
+        color: #ff9800;
+      }
+    }
+    .large-footer-plan {
+      position: absolute;
+      bottom: -20rem;
+      left: 16px;
+      // bottom: 30px;
+      width: 245px;
+      height: 226px;
+      background: #6641aa;
+      border-radius: 21px;
+      // margin-left: 33px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      .plan {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 35px;
+        /* or 159% */
+
+        letter-spacing: -0.01em;
+
+        span {
+          color: #ff9800;
+        }
+      }
+      .plan-img {
+        margin-left: 2rem;
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+  
+  }
+}
+@media screen and (max-width: 992px) {
+  .navigation-bar {
+    display: none;
+  }
+}
+
+// according to figma Navbar will be hide in xs -- from: Noor Ul Ain
+@media screen and (max-width: 430px) {
+  .navigation-bar {
+    display: none;
+  }
+
+ 
+}

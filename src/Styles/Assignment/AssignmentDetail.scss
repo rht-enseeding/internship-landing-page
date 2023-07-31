@@ -1,0 +1,284 @@
+.assignmentDetail {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  .assignmentDetail-header {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 57px;
+    /* identical to box height */
+
+    letter-spacing: -0.01em;
+
+    color: #000000;
+  }
+  .assignmentDetail-buttons {
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .ad-button {
+      width: 145px;
+      height: 46px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: #6641aa;
+      border-radius: 10px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
+
+      color: #ffffff;
+    }
+  }
+  .ad-information {
+    margin-top: 2rem;
+    max-width: 60%;
+    min-width: 50%;
+    .ad-info-line {
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      .ad-info-line-left {
+        min-width: 200px;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 29px;
+        /* identical to box height */
+
+        letter-spacing: -0.01em;
+
+        color: #616161;
+      }
+      .ad-info-line-title {
+        min-width: 200px;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 28px;
+        /* identical to box height */
+
+        letter-spacing: -0.01em;
+
+        color: #616161;
+      }
+      .ad-info-line-requirement {
+        min-width: 200px;
+        width: 200px;
+        height: 43px;
+
+        background: rgba(102, 65, 170, 0.12);
+        border-radius: 60px;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 21px;
+        letter-spacing: -0.01em;
+
+        color: #6641aa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .ad-info-line-status {
+        min-width: 200px;
+        .status {
+          width: 94px;
+          height: 34px;
+
+          background: #ec3b57;
+          border-radius: 5px;
+          font-family: "Source Sans Pro";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 19px;
+          /* identical to box height */
+
+          letter-spacing: -0.01em;
+
+          color: #ffffff;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+      .ad-info-line-category {
+        min-width: 200px;
+        width: 200px;
+        height: 43px;
+
+        background: rgba(102, 65, 170, 0.12);
+        border-radius: 60px;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 21px;
+        letter-spacing: -0.01em;
+
+        color: #6641aa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .ad-info-line-topic {
+        min-width: 200px;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 26px;
+        letter-spacing: -0.01em;
+
+        color: #6641aa;
+      }
+      .ad-info-line-user {
+        min-width: 200px;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 26px;
+        letter-spacing: -0.01em;
+
+        color: #000000;
+
+        img {
+          width: 50px;
+          height: 50px;
+          margin-right: 0.5rem;
+        }
+      }
+      .ad-info-line-level {
+        min-width: 200px;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 26px;
+        letter-spacing: -0.01em;
+
+        color: #fb0101;
+      }
+      .ad-info-line-deadline {
+        min-width: 200px;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 26px;
+        letter-spacing: -0.01em;
+
+        color: #000000;
+      }
+      .ad-info-line-mark {
+        min-width: 200px;
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 29px;
+        /* identical to box height */
+
+        letter-spacing: -0.01em;
+
+        color: #ec3b57;
+      }
+    }
+  }
+  .ad-below {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+    .ad-below-left {
+      min-width: 679px;
+      width: 47%;
+      min-height: 1058px;
+
+      background: #ffffff;
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+      .ad-bl-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(204, 204, 204, 0.5);
+        gap: 2rem;
+        .ad-bl-h-active {
+          padding: 1.5rem;
+          border-bottom: 2px solid black;
+          font-family: "Source Sans Pro";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 23px;
+          /* identical to box height */
+
+          letter-spacing: -0.01em;
+
+          color: #000000;
+        }
+        .ad-bl-h-disabled {
+          padding: 1.5rem;
+          font-family: "Source Sans Pro";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 23px;
+          /* identical to box height */
+
+          letter-spacing: -0.01em;
+
+          color: rgba(103, 103, 106, 0.9);
+        }
+      }
+      .ad-bl-main {
+        padding: 1rem;
+        h1 {
+          font-family: "Source Sans Pro";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 27px;
+          line-height: 34px;
+          /* identical to box height */
+
+          letter-spacing: -0.01em;
+
+          color: #000000;
+        }
+      }
+    }
+    .ad-below-right {
+      min-width: 640px;
+      width: 47%;
+      min-height: 1058px;
+
+      background: #ffffff;
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+    }
+  }
+}

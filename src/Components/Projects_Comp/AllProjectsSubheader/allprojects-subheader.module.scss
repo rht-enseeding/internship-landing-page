@@ -1,0 +1,49 @@
+@import "../../../Styles/helperStyle/helper";
+
+.allprojects_Subheader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.h1 {
+  @include fontStyle1(700, 30, 38);
+  color: #000000;
+  margin-bottom: 10px;
+}
+.btn1 {
+  width: 107px;
+  height: 46px;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  @include fontStyle1(600, 15, 18);
+  &:hover {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    color: #000000;
+  }
+}
+.btn2 {
+  width: 145px;
+  height: 46px;
+  background: #6641aa;
+  border-radius: 10px;
+  color: #ffffff;
+  @include fontStyle1(500, 17, 21);
+
+  &:hover {
+    background: #6641aa;
+  }
+}
+
+@include media(500px) {
+  .allprojects_Subheader {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .h1 {
+    margin-bottom: 20px;
+  }
+}

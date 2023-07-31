@@ -1,0 +1,112 @@
+@import "../../Styles/helperStyle/helper";
+
+.project_comp {
+  width: 100%;
+  padding: 20px;
+}
+.box1 {
+  display: flex;
+  width: 100%;
+}
+
+.box_purple_calender {
+  display: flex;
+}
+
+.h1 {
+  @include fontStyle1(700, 30, 38);
+  color: #000000;
+  margin-bottom: 10px;
+}
+.purpleBg {
+  background-image: url("../../Assets/BgPurple.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 241px;
+  border-radius: 10px;
+  padding-left: 19px;
+  padding-top: 19px;
+  height: 246px;
+
+  .editBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(186, 154, 245, 0.23);
+    border-radius: 10px;
+    //   padding: 16px;
+    width: 58px;
+    height: 55px;
+  }
+
+  .digit {
+    margin-top: 36px;
+    margin-bottom: 24px;
+    @include fontStyle1(600, 35, 44);
+    color: #ffffff;
+  }
+
+  .subH2 {
+    @include fontStyle1(400, 22, 28);
+    color: #ffffff;
+  }
+}
+
+.stackbar_chart {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20px;
+}
+
+.secondDiv {
+  width: 100%;
+  background-color: rgba(217, 217, 217, 0.3);
+  border-radius: 5px;
+  padding: 34px 22px;
+}
+
+@include media(1600px) {
+  .purpleBg {
+    margin-right: 20px;
+  }
+  .stackbar_chart {
+    width: 45%;
+    margin-left: 20px;
+  }
+}
+@include media(1200px) {
+  .purpleBg {
+    // width: 2px;
+    margin-right: 10px;
+  }
+  .stackbar_chart {
+    width: 55%;
+    margin-left: 20px;
+  }
+  .box1 {
+    flex-direction: column;
+  }
+}
+@include media(786px) {
+  .box1 {
+    flex-direction: column;
+  }
+  .box_purple_calender {
+    justify-content: space-around;
+  }
+  .purpleBg {
+    width: 100%;
+  }
+}
+@include media(480px) {
+  .box1 {
+    flex-direction: column;
+  }
+  .box_purple_calender {
+    flex-direction: column;
+  }
+  .stackbar_chart {
+    width: 90%;
+  }
+}

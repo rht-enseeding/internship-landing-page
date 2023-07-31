@@ -1,0 +1,153 @@
+@import "../../Styles//helperStyle/helper";
+
+.courseMilestone {
+  width: 100% !important;
+  margin-left: 0px !important;
+  padding: 20px;
+}
+
+.milestoneFlexdiv {
+  display: flex;
+}
+.courseMilestoneH1 {
+  @include fontStyle1(700, 30, 38);
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.graphicDesigningBg {
+  // width: 424px;
+  width: 100%;
+  height: auto;
+  background: rgba(102, 65, 170, 0.03);
+  border-radius: 6px;
+  display: flex;
+  padding: 16px 16px;
+  // color: rgb(249, 244, 236);
+
+  .gdH2 {
+    @include fontStyle1(600, 28, 35);
+    color: #000000;
+  }
+  .percentH2 {
+    @include fontStyle1(600, 32, 40);
+    color: #6641aa;
+    margin-top: 90px;
+    margin-left: 10px;
+  }
+  .iconBox1,
+  .IconBoxMain {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .icon1 {
+    color: rgba(66, 66, 66, 0.5);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .iconText {
+    margin-left: 8px;
+    @include fontStyle1(600, 14, 18);
+    color: rgba(66, 66, 66, 0.5);
+  }
+}
+
+.Button1 {
+  @include fontStyle1(600, 14, 18);
+  width: 90px;
+  height: 31px;
+  color: #6641aa;
+  border: 1px solid #6641aa;
+  border-radius: 5px;
+  &:hover {
+    color: #6641aa;
+    border: 1px solid #6641aa;
+  }
+}
+
+.Button2 {
+  width: 90px;
+  height: 31px;
+  color: #ffffff;
+  background: #6641aa;
+  border-radius: 5px;
+  @include fontStyle1(600, 14, 18);
+  margin-left: 42px;
+  &:hover {
+    background: #6641aa;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+}
+
+.goPremiumDiv {
+  margin-left: 16px;
+  width: 700px;
+}
+
+.BtnBox {
+  margin-left: 20px;
+}
+@include media(1440px) {
+  .Button2 {
+    margin-left: 10px;
+  }
+
+  .BtnBox {
+    margin-left: 0px;
+  }
+}
+@include media(1000px) {
+  .milestoneFlexdiv {
+    display: flex;
+    flex-direction: column;
+  }
+  .goPremiumDiv {
+    margin-left: 0px;
+  }
+}
+
+@include media(440px) {
+  .gdH2 {
+    font-size: 20px !important;
+    line-height: 20px !important;
+  }
+  .percentH2 {
+    // @include fontStyle1(600, 32, 40);
+    font-size: 20px !important;
+    line-height: 20px !important;
+    margin-top: 70px !important;
+    margin-left: 10px;
+  }
+  .iconBox1,
+  .IconBoxMain {
+    display: flex;
+    align-items: center;
+    margin-top: 10px !important;
+  }
+  .icon1 {
+    color: rgba(66, 66, 66, 0.5);
+    width: 16px !important;
+    height: 16px !important;
+    display: flex;
+    align-items: center;
+  }
+  .iconText {
+    margin-left: 8px;
+    @include fontStyle1(600, 14, 18);
+    font-size: 12px !important;
+    line-height: 14px !important;
+  }
+  .graphicDesigningBg {
+    padding: 16px 16px;
+  }
+  .Button1,
+  .Button2 {
+    width: 70px;
+    height: 31px;
+    font-size: 12px;
+  }
+}

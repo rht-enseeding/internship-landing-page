@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+.register {
+  padding: 2rem;
+  .register-main {
+    padding: 23px;
+    background: #fdfdfe;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    .register-left {
+      width: 650px;
+      height: 830px;
+      background: #7237b7;
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+      padding: 2rem;
+      h1 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 54px;
+
+        color: #ffffff;
+      }
+      p {
+        font-family: "Inter";
+        font-style: normal;
+        width: 465px;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 38px;
+        /* or 152% */
+
+        color: #e6e6e6;
+      }
+      .register-img {
+        width: 450px;
+        height: 450px;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+        }
+      }
+    }
+    .register-right {
+      width: 510px;
+      height: 830px;
+      //   border: 3px solid red;
+      padding: 3.5rem;
+      padding-top: 2rem;
+      .register-right-main {
+        width: 510px;
+        // border: 3px solid red;
+        h1 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 45px;
+          line-height: 54px;
+
+          color: #000000;
+          margin-bottom: 1rem;
+        }
+        p {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 27px;
+
+          color: #74757e;
+          margin-bottom: 2rem;
+        }
+        form {
+          label {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+
+            // color: red;
+            color: rgba(0, 13, 47, 0.7);
+            margin-bottom: 0.75rem;
+          }
+
+          .verification-area {
+            gap: 14px;
+            .verification {
+              width: 72px;
+              height: 67px;
+
+              background: #ffffff;
+              border: 1px solid rgba(201, 196, 211, 0.83);
+              border-radius: 5px;
+              margin: 0;
+              input::-webkit-outer-spin-button,
+              input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                // margin: 0;
+              }
+
+              /* Firefox */
+              input[type="number"] {
+                appearance: unset;
+                -moz-appearance: textfield;
+              }
+              input {
+                padding: 0;
+                width: 100%;
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 48px;
+
+                color: rgba(0, 0, 0, 0.4);
+              }
+            }
+          }
+
+          input {
+            display: block;
+            background: #ffffff;
+            border: 1px solid rgba(201, 196, 211, 0.83);
+            border-radius: 5px;
+            width: 510px;
+            height: 67px;
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+          }
+          button {
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            width: 510px;
+            height: 67px;
+
+            background: #6641aa;
+            border-radius: 5px;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 23px;
+            line-height: 28px;
+            /* identical to box height */
+
+            color: #ffffff;
+          }
+        }
+        .register-below {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 23px;
+          line-height: 28px;
+          text-align: center;
+          /* identical to box height */
+
+          color: #000000;
+          span {
+          }
+        }
+      }
+    }
+  }
+}

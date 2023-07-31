@@ -1,0 +1,135 @@
+@import "../../../Styles/helperStyle/helper";
+
+.mainBg {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.purpleSq {
+  width: 23px;
+  height: 23px;
+  background: #6641aa;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+.pinkSq {
+  width: 23px;
+  height: 23px;
+  background: #ec3b57;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+.greenSq {
+  width: 23px;
+  height: 23px;
+  background: #59e703db;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+.orangeSq {
+  width: 23px;
+  height: 23px;
+  background: #ff9800;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.h1 {
+  @include fontStyle1(600, 23, 29);
+  color: #6641aa;
+  text-transform: uppercase;
+}
+.h2 {
+  @include fontStyle1(600, 23, 29);
+  color: #ec3b57;
+  text-transform: uppercase;
+}
+.h3 {
+  @include fontStyle1(600, 23, 29);
+  color: #59e703db;
+  text-transform: uppercase;
+}
+.h4 {
+  @include fontStyle1(600, 23, 29);
+  color: #ff9800;
+  text-transform: uppercase;
+}
+
+.oneTab {
+  display: flex;
+  margin-right: 70px;
+  align-items: center;
+  cursor: pointer;
+}
+
+@include media(1200px) {
+  .h1 {
+    @include fontStyle1(600, 14, 20);
+    color: #6641aa;
+    text-transform: uppercase;
+  }
+  .h2 {
+    @include fontStyle1(600, 14, 20);
+    margin-top: 10px;
+  }
+  .h3 {
+    @include fontStyle1(600, 14, 20);
+    margin-top: 10px;
+  }
+  .h4 {
+    @include fontStyle1(600, 14, 20);
+    margin-top: 10px;
+  }
+}
+
+@include media(500px) {
+  .mainBg {
+    flex-direction: column;
+    padding-left: 0px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .h1 {
+    @include fontStyle1(600, 14, 20);
+    color: #6641aa;
+    text-transform: uppercase;
+  }
+  .h2 {
+    @include fontStyle1(600, 14, 20);
+    margin-top: 10px;
+  }
+  .h3 {
+    @include fontStyle1(600, 14, 20);
+    margin-top: 10px;
+  }
+  .h4 {
+    @include fontStyle1(600, 14, 20);
+    margin-top: 10px;
+  }
+  .purpleSq {
+    margin-right: 12px;
+    // margin-left: 12px;
+  }
+  .pinkSq {
+    margin-right: 12px;
+    margin-left: 30px;
+  }
+  .greenSq {
+    margin-right: 12px;
+    margin-left: 10px;
+  }
+  .orangeSq {
+    margin-right: 12px;
+    margin-left: -20px;
+  }
+  .oneTab {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}

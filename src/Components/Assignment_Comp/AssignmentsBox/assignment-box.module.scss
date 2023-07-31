@@ -1,0 +1,41 @@
+@import "../../../Styles/helperStyle/helper";
+
+.box {
+  padding: 20px 16px;
+}
+.mainBox {
+  border-color: #d9d9d933;
+  border-style: solid;
+  padding: 20px 16px;
+}
+.headBox {
+  display: flex;
+  justify-content: space-between;
+}
+.h1 {
+  @include fontStyle1(700, 30, 38);
+  color: #000000;
+}
+
+.link1 {
+  @include fontStyle1(400, 18, 23);
+  color: #6641aa;
+  text-decoration: none;
+}
+
+.btn1 {
+  width: 126px;
+  height: 36px;
+  background: rgba(89, 231, 3, 0.86);
+  border-radius: 80px;
+  border: none;
+  @include fontStyle1(4600, 16, 20);
+  color: #ffffff;
+  margin-top: 25px;
+}
+@include media(440px) {
+  .headBox {
+    display: flex;
+    flex-direction: column;
+  }
+}

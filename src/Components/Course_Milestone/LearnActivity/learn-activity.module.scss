@@ -1,0 +1,20 @@
+@import "../../../Styles/helperStyle/helper";
+.h1 {
+  @include fontStyle1(700, 30, 38);
+  color: #000000;
+}
+
+.learnActivityDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+@include media(450px) {
+  .learnActivityDiv {
+    display: flex;
+    flex-direction: column;
+  }
+  .h1 {
+    margin-bottom: 10px;
+  }
+}

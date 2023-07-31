@@ -1,0 +1,53 @@
+.tHead > tr th {
+  background-color: #d9d9d966;
+  padding: 1rem 0.5rem !important;
+  border: 1px solid #d9d9d9;
+}
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tHead > th {
+  color: #000000;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  border: solid 1px #d9d9d9;
+}
+thead > tr > th:first-child {
+  border-top-left-radius: 3px;
+}
+thead > tr > th:last-child {
+  border-top-right-radius: 3px;
+}
+
+tbody tr:nth-child(odd) {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9 !important;
+}
+
+tbody tr:nth-child(even) {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  background-color: #fff;
+}
+
+.first-tr > td {
+  border: solid 1px #d9d9d9;
+  height: 140px;
+  border-style: solid;
+  border-bottom: 1px solid #d9d9d9;
+}

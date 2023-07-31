@@ -1,0 +1,47 @@
+@import "../../../../Styles/helperStyle/helper";
+
+.mainDiv2 {
+  display: flex;
+  //   align-items: center;
+  justify-content: space-between;
+}
+.mainDiv3 {
+  display: flex;
+  //   align-items: center;
+  justify-content: space-between;
+}
+.pinkCircle {
+  width: 16px;
+  height: 16px;
+  background: #ec3b57;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.h2 {
+  @include fontStyle1(600, 20, 25);
+  color: #000000;
+}
+.subTitle {
+  text-transform: capitalize;
+  @include fontStyle1(600, 18, 23);
+  color: rgba(66, 66, 66, 0.5);
+  margin-top: 9px;
+}
+
+@include media(440px) {
+  .h2 {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+  .subTitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .pinkCircle {
+    width: 18px !important;
+    height: 12px;
+  }
+}

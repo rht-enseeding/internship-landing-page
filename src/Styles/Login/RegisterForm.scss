@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+.registerForm {
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  .registerFormMain {
+    background: rgba(102, 65, 170, 0.01);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 68px;
+    padding-top: 45px;
+    h1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 54px;
+
+      color: #000000;
+      margin-bottom: 66px;
+    }
+    form {
+      .form-main {
+        display: flex;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+
+        color: rgba(0, 13, 47, 0.7);
+        .left {
+          width: 50%;
+          label {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+
+            color: rgba(0, 13, 47, 0.7);
+
+            margin-bottom: 35px;
+          }
+          input[type="text"] {
+            display: block;
+            margin-bottom: 37px;
+            display: block;
+            margin-bottom: 37px;
+            box-sizing: border-box;
+
+            width: 543px;
+            height: 67px;
+
+            background: #ffffff;
+            border: 1px solid rgba(201, 196, 211, 0.83);
+            border-radius: 5px;
+            max-width: 90%;
+          }
+          .file-input {
+            box-sizing: border-box;
+
+            width: 543px;
+            height: 158px;
+            max-width: 90%;
+
+            background: #ffffff;
+            border: 1px solid rgba(201, 196, 211, 0.83);
+            border-radius: 5px;
+            margin-bottom: 37px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+            }
+            input[type="file"] {
+              position: absolute;
+              opacity: 0;
+              width: 100%;
+              height: 100%;
+              border: 3px solid red;
+            }
+          }
+          textarea {
+            resize: none;
+            display: block;
+            margin-bottom: 37px;
+            box-sizing: border-box;
+
+            width: 543px;
+            height: 173px;
+
+            background: #ffffff;
+            border: 1px solid rgba(201, 196, 211, 0.83);
+            border-radius: 5px;
+            max-width: 90%;
+          }
+          select {
+            display: block;
+            margin-bottom: 37px;
+            box-sizing: border-box;
+
+            width: 543px;
+            height: 67px;
+
+            background: #ffffff;
+            border: 1px solid rgba(201, 196, 211, 0.83);
+            border-radius: 5px;
+            max-width: 90%;
+            option {
+            }
+          }
+        }
+        .right {
+          label {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+
+            color: rgba(0, 13, 47, 0.7);
+
+            margin-bottom: 35px;
+          }
+          input[type="text"] {
+            display: block;
+            margin-bottom: 37px;
+            box-sizing: border-box;
+
+            width: 543px;
+            height: 67px;
+
+            background: #ffffff;
+            border: 1px solid rgba(201, 196, 211, 0.83);
+            border-radius: 5px;
+            max-width: 90%;
+          }
+          .file-input {
+            box-sizing: border-box;
+
+            width: 543px;
+            height: 158px;
+            max-width: 90%;
+
+            background: #ffffff;
+            border: 1px solid rgba(201, 196, 211, 0.83);
+            border-radius: 5px;
+            margin-bottom: 37px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+            }
+            input[type="file"] {
+              position: absolute;
+              opacity: 0;
+              width: 100%;
+              height: 100%;
+              border: 3px solid red;
+            }
+          }
+          textarea {
+            display: block;
+            margin-bottom: 37px;
+          }
+          select {
+            display: block;
+            margin-bottom: 37px;
+            box-sizing: border-box;
+
+            width: 543px;
+            height: 67px;
+
+            background: #ffffff;
+            border: 1px solid rgba(201, 196, 211, 0.83);
+            border-radius: 5px;
+            max-width: 90%;
+            option {
+            }
+          }
+        }
+      }
+    }
+    button {
+      width: 510px;
+      height: 67px;
+
+      background: #6641aa;
+      border-radius: 5px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 23px;
+      line-height: 28px;
+      /* identical to box height */
+
+      color: #ffffff;
+    }
+  }
+}

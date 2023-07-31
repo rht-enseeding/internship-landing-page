@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+.projectDetail {
+  display: flex;
+  justify-content: space-between;
+  //   gap: 2rem;
+  padding: 2rem;
+  padding-top: 1rem;
+  flex-wrap: wrap;
+  .pd-left {
+    max-width: 725px;
+    margin-bottom: 2rem;
+    .pd-left-header {
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 57px;
+      /* identical to box height */
+
+      letter-spacing: -0.01em;
+
+      color: #000000;
+    }
+    .pdl-info {
+      margin-top: 2rem;
+      .pdl-info-line {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .pdl-info-left {
+          min-width: 340px;
+          font-family: "Source Sans Pro";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 23px;
+          line-height: 29px;
+          /* identical to box height */
+
+          letter-spacing: -0.01em;
+
+          color: #616161;
+        }
+        .pdl-info-status {
+          min-width: 385px;
+          .status {
+            width: 94px;
+            height: 34px;
+
+            background: #6641aa;
+            border-radius: 5px;
+            font-family: "Source Sans Pro";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 19px;
+            /* identical to box height */
+
+            letter-spacing: -0.01em;
+
+            color: #ffffff;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              margin-right: 0.5rem;
+            }
+          }
+        }
+        .pdl-info-users {
+          min-width: 385px;
+          display: flex;
+          gap: 0.5rem;
+          .pdl-info-user {
+            width: 183px;
+            height: 43px;
+
+            background: rgba(186, 154, 245, 0.23);
+            border-radius: 30px;
+            font-family: "Source Sans Pro";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 21px;
+            letter-spacing: -0.01em;
+
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img {
+              width: 35px;
+            }
+            padding-right: 2rem;
+          }
+        }
+        .pdl-info-deadline {
+            min-width: 385px;
+          font-family: "Source Sans Pro";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 21px;
+          letter-spacing: -0.01em;
+
+          color: #000000;
+        }
+        .pdl-info-level {
+            min-width: 385px;
+          font-family: "Source Sans Pro";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 25px;
+          letter-spacing: -0.01em;
+
+          color: #fb0101;
+        }
+      }
+    }
+    .pdl-description {
+      margin-top: 2rem;
+      .pdl-description-header {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 29px;
+        /* identical to box height */
+
+        letter-spacing: -0.01em;
+
+        color: #000000;
+      }
+      .pdl-description-main {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 21px;
+
+        color: #4f4c4c;
+        p {
+        }
+      }
+    }
+    .pdl-media {
+      margin-top: 2rem;
+      .pdl-media-header {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 29px;
+        /* identical to box height */
+
+        letter-spacing: -0.01em;
+
+        color: #000000;
+      }
+      .pdl-media-main {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        .media-comp {
+          width: 286px;
+          height: 219px;
+
+          background: rgba(186, 154, 245, 0.1);
+          border-radius: 20px;
+          position: relative;
+          padding: 2rem;
+          .media-title {
+            font-family: "Source Sans Pro";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: -0.01em;
+
+            color: #000000;
+          }
+          .media-mini {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding-left: 14px;
+            padding-top: 14px;
+            width: 223px;
+            height: 124px;
+
+            background: #ffffff;
+            border-radius: 0px 0px 0px 20px;
+            .media-mini-upline {
+              width: 201px;
+              height: 8px;
+
+              background: #d9d9d9;
+              border-radius: 60px;
+              margin-bottom: 0.5rem;
+            }
+            .media-mini-downline {
+              width: 95px;
+              height: 8px;
+
+              background: #d9d9d9;
+              border-radius: 60px;
+            }
+            .media-mini-img {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .pd-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 450px;
+    max-width: 20%;
+    .pd-right-header {
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 38px;
+      /* identical to box height */
+
+      letter-spacing: -0.01em;
+
+      color: #000000;
+    }
+    .act-button {
+      align-self: flex-end;
+    }
+    .pd-right-activity {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      .activity-left {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        img{
+            width: 100%;
+        }
+      }
+      .activity-right {
+        .activity-right-header {
+          font-family: "Source Sans Pro";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 23px;
+          line-height: 29px;
+          /* identical to box height */
+
+          letter-spacing: -0.01em;
+
+          color: #000000;
+        }
+        .activity-right-date {
+          font-family: "Source Sans Pro";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 19px;
+          /* identical to box height */
+
+          letter-spacing: -0.01em;
+
+          color: #616161;
+        }
+        .activity-right-ch {
+          margin-top: 1rem;
+          font-family: "Source Sans Pro";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 23px;
+          /* identical to box height */
+
+          letter-spacing: -0.01em;
+
+          color: #000000;
+
+          span {
+            color: #6641aa;
+          }
+        }
+        .activity-right-comment {
+          margin-top: 1rem;
+
+          width: 347px;
+          height: 118px;
+          padding: 15px;
+
+          background: rgba(217, 217, 217, 0.3);
+          border-radius: 5px;
+          font-family: "Source Sans Pro";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          /* or 150% */
+
+          letter-spacing: -0.01em;
+
+          color: #000000;
+        }
+      }
+    }
+  }
+}
